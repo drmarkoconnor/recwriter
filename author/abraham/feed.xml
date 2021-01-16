@@ -2,17 +2,24 @@
 
 <feed xmlns="http://www.w3.org/2005/Atom" >
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
+<<<<<<< HEAD
   <link href="http://localhost:4000/author/abraham/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
   <updated>2021-01-16T13:22:06+00:00</updated>
   <id>http://localhost:4000/author/abraham/feed.xml</id>
+=======
+  <link href="https://drmarkoconnor.github.io/recwriter/author/abraham/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="https://drmarkoconnor.github.io/recwriter/" rel="alternate" type="text/html" />
+  <updated>2021-01-16T13:45:43+00:00</updated>
+  <id>https://drmarkoconnor.github.io/recwriter/author/abraham/feed.xml</id>
+>>>>>>> gh-pages
 
   
   
   
 
   
-    <title type="html">Ghost | </title>
+    <title type="html">moc | </title>
   
 
   
@@ -45,11 +52,19 @@
   
     <entry>
       <title type="html">Gettysburg Address</title>
+<<<<<<< HEAD
       <link href="http://localhost:4000/gettysburg-address" rel="alternate" type="text/html" title="Gettysburg Address" />
       <published>1863-11-19T11:18:00+01:00</published>
       <updated>1863-11-19T11:18:00+01:00</updated>
       <id>http://localhost:4000/gettysburg-address</id>
       <content type="html" xml:base="http://localhost:4000/gettysburg-address">&lt;p&gt;Fourscore and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.&lt;/p&gt;
+=======
+      <link href="https://drmarkoconnor.github.io/recwriter/gettysburg-address" rel="alternate" type="text/html" title="Gettysburg Address" />
+      <published>1863-11-19T11:18:00+01:00</published>
+      <updated>1863-11-19T11:18:00+01:00</updated>
+      <id>https://drmarkoconnor.github.io/recwriter/gettysburg-address</id>
+      <content type="html" xml:base="https://drmarkoconnor.github.io/recwriter/gettysburg-address">&lt;p&gt;Fourscore and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.&lt;/p&gt;
+>>>>>>> gh-pages
 
 &lt;p&gt;Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated, can long endure. We are met on a great battle-field of that war. We have come to dedicate a portion of that field, as a final resting place for those who here gave their lives that that nation might live. It is altogether fitting and proper that we should do this.&lt;/p&gt;
 

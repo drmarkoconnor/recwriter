@@ -2,17 +2,24 @@
 
 <feed xmlns="http://www.w3.org/2005/Atom" >
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
+<<<<<<< HEAD
   <link href="http://localhost:4000/author/edgar/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
   <updated>2021-01-16T13:22:06+00:00</updated>
   <id>http://localhost:4000/author/edgar/feed.xml</id>
+=======
+  <link href="https://drmarkoconnor.github.io/recwriter/author/edgar/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="https://drmarkoconnor.github.io/recwriter/" rel="alternate" type="text/html" />
+  <updated>2021-01-16T13:45:43+00:00</updated>
+  <id>https://drmarkoconnor.github.io/recwriter/author/edgar/feed.xml</id>
+>>>>>>> gh-pages
 
   
   
   
 
   
-    <title type="html">Ghost | </title>
+    <title type="html">moc | </title>
   
 
   
@@ -45,11 +52,19 @@
   
     <entry>
       <title type="html">Out to Sea</title>
+<<<<<<< HEAD
       <link href="http://localhost:4000/out-to-sea" rel="alternate" type="text/html" title="Out to Sea" />
       <published>1912-07-24T10:18:00+00:00</published>
       <updated>1912-07-24T10:18:00+00:00</updated>
       <id>http://localhost:4000/out-to-sea</id>
       <content type="html" xml:base="http://localhost:4000/out-to-sea">&lt;p&gt;I had this story from one who had no business to tell it to me, or to any other. I may credit the seductive influence of an old vintage upon the narrator for the beginning of it, and my own skeptical incredulity during the days that followed for the balance of the strange tale.&lt;/p&gt;
+=======
+      <link href="https://drmarkoconnor.github.io/recwriter/out-to-sea" rel="alternate" type="text/html" title="Out to Sea" />
+      <published>1912-07-24T10:18:00+00:00</published>
+      <updated>1912-07-24T10:18:00+00:00</updated>
+      <id>https://drmarkoconnor.github.io/recwriter/out-to-sea</id>
+      <content type="html" xml:base="https://drmarkoconnor.github.io/recwriter/out-to-sea">&lt;p&gt;I had this story from one who had no business to tell it to me, or to any other. I may credit the seductive influence of an old vintage upon the narrator for the beginning of it, and my own skeptical incredulity during the days that followed for the balance of the strange tale.&lt;/p&gt;
+>>>>>>> gh-pages
 
 &lt;p&gt;When my convivial host discovered that he had told me so much, and that I was prone to doubtfulness, his foolish pride assumed the task the old vintage had commenced, and so he unearthed written evidence in the form of musty manuscript, and dry official records of the British Colonial Office to support many of the salient features of his remarkable narrative.&lt;/p&gt;
 
