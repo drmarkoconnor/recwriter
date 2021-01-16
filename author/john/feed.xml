@@ -2,24 +2,17 @@
 
 <feed xmlns="http://www.w3.org/2005/Atom" >
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
-<<<<<<< HEAD
-  <link href="http://localhost:4000/author/john/feed.xml" rel="self" type="application/atom+xml" />
-  <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2021-01-16T13:22:06+00:00</updated>
-  <id>http://localhost:4000/author/john/feed.xml</id>
-=======
   <link href="https://drmarkoconnor.github.io/recwriter/author/john/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://drmarkoconnor.github.io/recwriter/" rel="alternate" type="text/html" />
-  <updated>2021-01-16T13:45:43+00:00</updated>
+  <updated>2021-01-16T16:53:47+00:00</updated>
   <id>https://drmarkoconnor.github.io/recwriter/author/john/feed.xml</id>
->>>>>>> gh-pages
 
   
   
   
 
   
-    <title type="html">moc | </title>
+    <title type="html">mocmocmoc | </title>
   
 
   
@@ -52,19 +45,11 @@
   
     <entry>
       <title type="html">A Full and Comprehensive Style Test</title>
-<<<<<<< HEAD
-      <link href="http://localhost:4000/a-full-and-comprehensive-style-test" rel="alternate" type="text/html" title="A Full and Comprehensive Style Test" />
-      <published>2012-09-01T11:00:00+01:00</published>
-      <updated>2012-09-01T11:00:00+01:00</updated>
-      <id>http://localhost:4000/a-full-and-comprehensive-style-test</id>
-      <content type="html" xml:base="http://localhost:4000/a-full-and-comprehensive-style-test">&lt;p&gt;Below is just about everything you’ll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.&lt;/p&gt;
-=======
       <link href="https://drmarkoconnor.github.io/recwriter/a-full-and-comprehensive-style-test" rel="alternate" type="text/html" title="A Full and Comprehensive Style Test" />
       <published>2012-09-01T11:00:00+01:00</published>
       <updated>2012-09-01T11:00:00+01:00</updated>
       <id>https://drmarkoconnor.github.io/recwriter/a-full-and-comprehensive-style-test</id>
       <content type="html" xml:base="https://drmarkoconnor.github.io/recwriter/a-full-and-comprehensive-style-test">&lt;p&gt;Below is just about everything you’ll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.&lt;/p&gt;
->>>>>>> gh-pages
 
 
 &lt;hr /&gt;
