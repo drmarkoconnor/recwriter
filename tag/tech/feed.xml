@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" >
+  <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
+  <link href="https://drmarkoconnor.github.io/recwriter/tag/tech/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="https://drmarkoconnor.github.io/recwriter/" rel="alternate" type="text/html" />
+  <updated>2021-01-16T22:23:03+00:00</updated>
+  <id>https://drmarkoconnor.github.io/recwriter/tag/tech/feed.xml</id>
+
+  
+  
+  
+
+  
+    <title type="html">old rectory writers | </title>
+  
+
+  
+    <subtitle>writing courses in the heart of north somerset - a perfect way to begin your writing journey</subtitle>
+  
+
+  
+
+  
+    
+      
+    
+  
+
+  
+  
+
+  
+    <entry>
+      <title type="html">Markup is converted to html by tiinderbox</title>
+      <link href="https://drmarkoconnor.github.io/recwriter/git-basics" rel="alternate" type="text/html" title="Markup is converted to html by tiinderbox" />
+      <published>2020-01-08T20:12:28+00:00</published>
+      <updated>2020-01-08T20:12:28+00:00</updated>
+      <id>https://drmarkoconnor.github.io/recwriter/git-basics</id>
+      <content type="html" xml:base="https://drmarkoconnor.github.io/recwriter/git-basics">&lt;h1&gt;git: Basic git set up for new projects including making/deleting a branch&lt;/h1&gt;
+
+&lt;h2&gt;git [command] [--flag] [arguments]&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;inside moc/repos&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mkdir [name of your new project]&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cd [name of your new project]&lt;/code&gt; 
+&lt;blockquote&gt;
+  &lt;p&gt;( move to the new directory )&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git init&lt;/code&gt;
+These are the basic steps to create a project that can be then version controlled by github.
+git will confirm that a .git directory has been created&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code&gt;ls -la&lt;/code&gt;
+will show the . .. .git structure now inside the new project&lt;/p&gt;
+&lt;/blockquote&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+echo &amp;gt;fileA.txt
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;this CLI creates an empty txt file&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;git add fileA.txt&lt;/code&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;this adds the file to the &lt;strong&gt;staging area&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git commit -m '_message_'&lt;/code&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;there are other -switches like -verbose&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;/blockquote&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code&gt;git branch&lt;/code&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;will list all the branches in the repos project and an asterisk indicates the current one&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;two command approach&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git branch featureX&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git checkout featureX&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;one command approach&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git checkout -b featureX&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;use the log function with graph to check&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;git log --oneline --graph&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;git checkout [name of branch]&lt;/code&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;this allows switching between branches&lt;/p&gt;
+&lt;/blockquote&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;File changes on branches&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;change the contents of the file whilst in the new branch&lt;/li&gt;
+&lt;li&gt;then change back to the master branch &lt;code&gt;git checkout master&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;open file and you will see that the changes to the file are not present ( as they were made under the featureX branch of which the master branch has no knowledge )&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;code&gt;use git log --oneline --graph --all&lt;/code&gt; to see all the commits attached to the branches in the repo&lt;/p&gt;
+
+&lt;p&gt;featureX branch has a more recent commit. Check back into this branch now&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git checkout featureX&lt;/code&gt; &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;add another change to the file and add it to stage and then commit it.
+There are now two commits on the featureX branch
+can use the &lt;code&gt;HEAD~&lt;/code&gt; tilde mark to checkout a previous commit&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;code&gt;git checkout HEAD~&lt;/code&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;this will raise a warning about a DETACHED HEAD state&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;go back to master ( by &lt;code&gt;git checkout master&lt;/code&gt; )&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Let's say that you &lt;strong&gt;don't want to merge&lt;/strong&gt; any changes made on the new file ( merging coming later )  and want to delete the branch &lt;strong&gt;featureX&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git branch  -d featureX&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This however will only produce a warning becasue there are two commits that will be left dangling. If you want to keep them you could create a new branch for them.&lt;/p&gt;
+
+&lt;p&gt;However the warning gives information about how you can delete with a -D option switch.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;ie &lt;code&gt;git branch  -D featureX&lt;/code&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;use &lt;code&gt;git log&lt;/code&gt; and &lt;code&gt;git status&lt;/code&gt; frequently to see where you are&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;(If you are interested) Want to &quot;undo&quot; the deleting of the featureX branch?
+Execute &lt;code&gt;git reflog&lt;/code&gt; . This shows the local history of HEAD references. Since Git doesn't immediately delete commits, you can find the SHA-1 of your most recent featureX branch there.&lt;/p&gt;
+
+&lt;p&gt;Copy the SHA-1 of the &quot;add feature bigger mistake&quot; commit. Execute git checkout &lt;strong&gt;-b&lt;/strong&gt; &lt;code&gt;[this switch doesn't seem to work]??&lt;/code&gt; featureX [SHA-1 YOU COPIED] .&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;use &lt;code&gt;git log&lt;/code&gt; and &lt;code&gt;git status&lt;/code&gt; frequently to see where you are&lt;/li&gt;
+&lt;/ul&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Dr Mark O'Connor</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="git" />
+      
+        <category term="tech" />
+      
+
+      
+        <summary type="html">git: Basic git set up for new projects including making/deleting a branch</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">How this website is built - for free!</title>
+      <link href="https://drmarkoconnor.github.io/recwriter/building-this-website" rel="alternate" type="text/html" title="How this website is built - for free!" />
+      <published>2017-07-27T11:00:00+01:00</published>
+      <updated>2017-07-27T11:00:00+01:00</updated>
+      <id>https://drmarkoconnor.github.io/recwriter/building-this-website</id>
+      <content type="html" xml:base="https://drmarkoconnor.github.io/recwriter/building-this-website">&lt;h1 id=&quot;getting-jasper2-to-work-on-github-pages&quot;&gt;Getting jasper2 to work on github pages&lt;/h1&gt;
+
+&lt;h2 id=&quot;nutshell&quot;&gt;nutshell&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Clone &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyller/jasper2&lt;/code&gt; to local repo &lt;code class=&quot;highlighter-rouge&quot;&gt;jasper2&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Change _config.yml&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; baseurl: /recwriter/
+ url: https://drmarkoconnor.github.io
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;In github create repo subfolder &lt;code class=&quot;highlighter-rouge&quot;&gt;recwriter&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;In local &lt;code class=&quot;highlighter-rouge&quot;&gt;jasper2&lt;/code&gt; –&amp;gt; in terminal –&amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;JEKYLL_ENV=production bundle exec jekyll serve --livereload&lt;/code&gt; –&amp;gt; outputs to–&amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;jasper2-pages&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;jasper2-pages&lt;/code&gt; –&amp;gt;is then git pushed –&amp;gt; github recwriters repo main branch ie –&amp;gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	git add *
+	git commit -m 'suitable message reflected any changes'
+	git push origin main
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;After 1 to 5 mins the site should be live on ; &lt;code class=&quot;highlighter-rouge&quot;&gt;drmarkoconnor.github.io/recwriters/&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;produces Auto-regeneration: enabled for ‘/Users/moc/repos/jasper2’
+Server address: http://127.0.0.1:4000/recwriter//
+Server running… press ctrl-c to stop.&lt;/p&gt;
+
+&lt;p&gt;If this looks like it is running ok inthe local environment then jasper2-pages ( the produced static site ) needs pushiing to github&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;cd NAMEofREPO&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; git add *
+ git commit -m 'updating produced site or other relevant change message'
+ git push
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;(prior to git push you may want to check you have the remote set up properly)
+&lt;code class=&quot;highlighter-rouge&quot;&gt;git push --set-upstream origin BRANCH NAME&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;NB - not sure that a project subfolder needs a gh-pages branch any more ( Jan 2021 )&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/us-20.jpg#full&quot; alt=&quot;full width image with hash tag&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;wait for github to build the site and then check on ;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;[http://usernameGITHUB.IO/projectname/](#)&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Careful that exclude area of _config.yml doesn’t include assets/css as site won’t render without the css. Not sure why jasper2 produces this.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+	**exclude:**
+  - node_modules
+  - vendor
+  - .travis.yml
+  - Gemfile
+  - Gemfile.lock
+  - GHOST.txt
+  - gulpfile.js
+  - LICENSE
+  - package.json
+  - package-lock.json
+  - Rakefile
+  - README.md
+  - changelog.md
+  - &quot;*.Rmd&quot;
+  - .git*
+
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;_plugins&quot;&gt;_plugins&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll-autogenerator.rb&lt;/code&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll-capitalize-all.rb&lt;/code&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll-tagsgenerator.rb&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Make sure these remain in jasper2 - they are not supporteed by github which is why local gneration produced jasper2-pages ( the static site with js etc…) which is git pushed to the main github.io or project repo&lt;/p&gt;
+
+&lt;h1 id=&quot;todo&quot;&gt;todo&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;create dev branch in local and remote and see if can switch using github settings to display live - if dev is good merge onto main for new live&lt;/li&gt;
+  &lt;li&gt;tbx site to upload&lt;/li&gt;
+  &lt;li&gt;collect images relevant to writing&lt;/li&gt;
+  &lt;li&gt;add in fotolio images&lt;/li&gt;
+  &lt;li&gt;add in html5 bootstrap page to check works&lt;/li&gt;
+  &lt;li&gt;write short summary blog on how to update ( ie edit this file ) including the two youtube entries as insets&lt;/li&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;expand-to-include-blog-re-tinderbox-with-links-etc&quot;&gt;Expand to include blog re tinderbox with links etc…&lt;/h2&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Dr Mark O'Connor</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="tech" />
+      
+
+      
+        <summary type="html">Getting jasper2 to work on github pages</summary>
+      
+
+      
+      
+    </entry>
+  
+</feed>

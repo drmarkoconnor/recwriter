@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" >
+  <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
+  <link href="https://drmarkoconnor.github.io/recwriter/tag/tinderbox/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="https://drmarkoconnor.github.io/recwriter/" rel="alternate" type="text/html" />
+  <updated>2021-01-16T22:23:03+00:00</updated>
+  <id>https://drmarkoconnor.github.io/recwriter/tag/tinderbox/feed.xml</id>
+
+  
+  
+  
+
+  
+    <title type="html">old rectory writers | </title>
+  
+
+  
+    <subtitle>writing courses in the heart of north somerset - a perfect way to begin your writing journey</subtitle>
+  
+
+  
+
+  
+    
+      
+    
+  
+
+  
+  
+
+  
+    <entry>
+      <title type="html">There can be a much longer title set in the MyTitle KA</title>
+      <link href="https://drmarkoconnor.github.io/recwriter/Christmas" rel="alternate" type="text/html" title="There can be a much longer title set in the MyTitle KA" />
+      <published>2020-12-25T20:11:50+00:00</published>
+      <updated>2020-12-25T20:11:50+00:00</updated>
+      <id>https://drmarkoconnor.github.io/recwriter/Christmas</id>
+      <content type="html" xml:base="https://drmarkoconnor.github.io/recwriter/Christmas">&lt;h1&gt;Heading one - typing this directly in Tinderbox&lt;/h1&gt;
+
+&lt;h2&gt;Heading two - I have terminal open and running &lt;code&gt;bundle exec jekyll serve --livereload&lt;/code&gt;&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Visual Studio code shows files in folders based on git branch that is checked out&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;quote : I would like to find out if finder does this in some fashion as it is very cool&lt;/p&gt;
+&lt;/blockquote&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Dr Mark O'Connor</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="git" />
+      
+        <category term="tbx" />
+      
+        <category term="tinderbox" />
+      
+
+      
+        <summary type="html">Heading one - typing this directly in Tinderbox</summary>
+      
+
+      
+      
+    </entry>
+  
+</feed>

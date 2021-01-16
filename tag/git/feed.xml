@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" >
+  <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
+  <link href="https://drmarkoconnor.github.io/recwriter/tag/git/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="https://drmarkoconnor.github.io/recwriter/" rel="alternate" type="text/html" />
+  <updated>2021-01-16T22:23:03+00:00</updated>
+  <id>https://drmarkoconnor.github.io/recwriter/tag/git/feed.xml</id>
+
+  
+  
+  
+
+  
+    <title type="html">old rectory writers | </title>
+  
+
+  
+    <subtitle>writing courses in the heart of north somerset - a perfect way to begin your writing journey</subtitle>
+  
+
+  
+
+  
+    
+      
+    
+  
+
+  
+  
+
+  
+    <entry>
+      <title type="html">There can be a much longer title set in the MyTitle KA</title>
+      <link href="https://drmarkoconnor.github.io/recwriter/Christmas" rel="alternate" type="text/html" title="There can be a much longer title set in the MyTitle KA" />
+      <published>2020-12-25T20:11:50+00:00</published>
+      <updated>2020-12-25T20:11:50+00:00</updated>
+      <id>https://drmarkoconnor.github.io/recwriter/Christmas</id>
+      <content type="html" xml:base="https://drmarkoconnor.github.io/recwriter/Christmas">&lt;h1&gt;Heading one - typing this directly in Tinderbox&lt;/h1&gt;
+
+&lt;h2&gt;Heading two - I have terminal open and running &lt;code&gt;bundle exec jekyll serve --livereload&lt;/code&gt;&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Visual Studio code shows files in folders based on git branch that is checked out&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;quote : I would like to find out if finder does this in some fashion as it is very cool&lt;/p&gt;
+&lt;/blockquote&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Dr Mark O'Connor</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="git" />
+      
+        <category term="tbx" />
+      
+        <category term="tinderbox" />
+      
+
+      
+        <summary type="html">Heading one - typing this directly in Tinderbox</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">More Git</title>
+      <link href="https://drmarkoconnor.github.io/recwriter/more-git" rel="alternate" type="text/html" title="More Git" />
+      <published>2020-12-04T20:12:21+00:00</published>
+      <updated>2020-12-04T20:12:21+00:00</updated>
+      <id>https://drmarkoconnor.github.io/recwriter/more-git</id>
+      <content type="html" xml:base="https://drmarkoconnor.github.io/recwriter/more-git">&lt;h1&gt;git: Merging commits from branches&lt;/h1&gt;
+
+&lt;h2&gt;1. Fast-forward merge&lt;/h2&gt;
+
+&lt;p&gt;
+  This can only be done if there are no other commits to the base branch since
+  the branching took place It is the deafult method that git adopts
+&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git checkout master&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git merge featureX&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git branch -d featureX&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2&gt;2. Merge commit&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;git checkout master&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git merge featureX&lt;/code&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;
+    there will be a message here to accept or not the merge B - a no
+    fast-forward merge means that a merge commit will always be created if you
+    want to force a merge commit use the following
+    &lt;code&gt;git merge --no-ff featureX&lt;/code&gt;
+  &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;code&gt;git branch -d featureX&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2&gt;3. Squash merge&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;code&gt;git checkout master&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;git merge --squash featureX&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;git commit&lt;/code&gt; a)accept or modify the squash message&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;git branch -D featureX&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2&gt;4. Rebase&lt;/h2&gt;
+
+&lt;p&gt;
+  see
+  &lt;a href=&quot;drafts5://open?uuid=E350B40F-DBFF-40DC-8C89-DC5A1D899195&quot;
+    &gt;this file&lt;/a
+  &gt;
+&lt;/p&gt;
+
+&lt;h1&gt;Resolving merge conflicts&lt;/h1&gt;
+
+&lt;p&gt;
+  Essentially any files with conflicts are placed into the working tree after
+  being modified by git - a decision has to involve judgment and the files with
+  modified content are marked up by git with &gt;&gt;&gt;&gt; and &amp;lt;&amp;lt;&amp;lt;&amp;lt; and can
+  be edited, saved, added and them committed.
+&lt;/p&gt;
+
+&lt;p&gt;
+  Again use &lt;code&gt;git log --oneline --graph --all&lt;/code&gt; to see the results and
+  check all is good
+&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;checkout master&lt;/li&gt;
+  &lt;li&gt;
+    merge featureX
+    &lt;ul&gt;
+      &lt;li&gt;a. CONFLICT - both modified fileA.txt&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;fix fileA.txt&lt;/li&gt;
+  &lt;li&gt;stage fileA.txt&lt;/li&gt;
+  &lt;li&gt;commit the merge commit&lt;/li&gt;
+  &lt;li&gt;delete the featureX branch label&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2&gt;resolving a merge conflict involves 3 commits&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;the tip of the current branch ( 'ours' or 'mine')&lt;/li&gt;
+  &lt;li&gt;the tip of the branch to be merged ('theirs')&lt;/li&gt;
+  &lt;li&gt;a common ancestor ( 'merge base')&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1&gt;Aborting a merge attempt&lt;/h1&gt;
+
+&lt;p&gt;&lt;code&gt;git merge --abort&lt;/code&gt;&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Dr Mark O'Connor</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="git" />
+      
+
+      
+        <summary type="html">git: Merging commits from branches</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Markup is converted to html by tiinderbox</title>
+      <link href="https://drmarkoconnor.github.io/recwriter/git-basics" rel="alternate" type="text/html" title="Markup is converted to html by tiinderbox" />
+      <published>2020-01-08T20:12:28+00:00</published>
+      <updated>2020-01-08T20:12:28+00:00</updated>
+      <id>https://drmarkoconnor.github.io/recwriter/git-basics</id>
+      <content type="html" xml:base="https://drmarkoconnor.github.io/recwriter/git-basics">&lt;h1&gt;git: Basic git set up for new projects including making/deleting a branch&lt;/h1&gt;
+
+&lt;h2&gt;git [command] [--flag] [arguments]&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;inside moc/repos&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mkdir [name of your new project]&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cd [name of your new project]&lt;/code&gt; 
+&lt;blockquote&gt;
+  &lt;p&gt;( move to the new directory )&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git init&lt;/code&gt;
+These are the basic steps to create a project that can be then version controlled by github.
+git will confirm that a .git directory has been created&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code&gt;ls -la&lt;/code&gt;
+will show the . .. .git structure now inside the new project&lt;/p&gt;
+&lt;/blockquote&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+echo &amp;gt;fileA.txt
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;this CLI creates an empty txt file&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;git add fileA.txt&lt;/code&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;this adds the file to the &lt;strong&gt;staging area&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git commit -m '_message_'&lt;/code&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;there are other -switches like -verbose&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;/blockquote&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code&gt;git branch&lt;/code&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;will list all the branches in the repos project and an asterisk indicates the current one&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;two command approach&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git branch featureX&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git checkout featureX&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;one command approach&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git checkout -b featureX&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;use the log function with graph to check&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;git log --oneline --graph&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;git checkout [name of branch]&lt;/code&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;this allows switching between branches&lt;/p&gt;
+&lt;/blockquote&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;File changes on branches&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;change the contents of the file whilst in the new branch&lt;/li&gt;
+&lt;li&gt;then change back to the master branch &lt;code&gt;git checkout master&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;open file and you will see that the changes to the file are not present ( as they were made under the featureX branch of which the master branch has no knowledge )&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;code&gt;use git log --oneline --graph --all&lt;/code&gt; to see all the commits attached to the branches in the repo&lt;/p&gt;
+
+&lt;p&gt;featureX branch has a more recent commit. Check back into this branch now&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git checkout featureX&lt;/code&gt; &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;add another change to the file and add it to stage and then commit it.
+There are now two commits on the featureX branch
+can use the &lt;code&gt;HEAD~&lt;/code&gt; tilde mark to checkout a previous commit&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;code&gt;git checkout HEAD~&lt;/code&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;this will raise a warning about a DETACHED HEAD state&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;go back to master ( by &lt;code&gt;git checkout master&lt;/code&gt; )&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Let's say that you &lt;strong&gt;don't want to merge&lt;/strong&gt; any changes made on the new file ( merging coming later )  and want to delete the branch &lt;strong&gt;featureX&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git branch  -d featureX&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This however will only produce a warning becasue there are two commits that will be left dangling. If you want to keep them you could create a new branch for them.&lt;/p&gt;
+
+&lt;p&gt;However the warning gives information about how you can delete with a -D option switch.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;ie &lt;code&gt;git branch  -D featureX&lt;/code&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;use &lt;code&gt;git log&lt;/code&gt; and &lt;code&gt;git status&lt;/code&gt; frequently to see where you are&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;(If you are interested) Want to &quot;undo&quot; the deleting of the featureX branch?
+Execute &lt;code&gt;git reflog&lt;/code&gt; . This shows the local history of HEAD references. Since Git doesn't immediately delete commits, you can find the SHA-1 of your most recent featureX branch there.&lt;/p&gt;
+
+&lt;p&gt;Copy the SHA-1 of the &quot;add feature bigger mistake&quot; commit. Execute git checkout &lt;strong&gt;-b&lt;/strong&gt; &lt;code&gt;[this switch doesn't seem to work]??&lt;/code&gt; featureX [SHA-1 YOU COPIED] .&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;use &lt;code&gt;git log&lt;/code&gt; and &lt;code&gt;git status&lt;/code&gt; frequently to see where you are&lt;/li&gt;
+&lt;/ul&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Dr Mark O'Connor</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="git" />
+      
+        <category term="tech" />
+      
+
+      
+        <summary type="html">git: Basic git set up for new projects including making/deleting a branch</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Set on 3/1/2020 to post on 4th January git Netowrk commands</title>
+      <link href="https://drmarkoconnor.github.io/recwriter/network-command" rel="alternate" type="text/html" title="Set on 3/1/2020 to post on 4th January git Netowrk commands" />
+      <published>2020-01-03T20:10:46+00:00</published>
+      <updated>2020-01-03T20:10:46+00:00</updated>
+      <id>https://drmarkoconnor.github.io/recwriter/network-command</id>
+      <content type="html" xml:base="https://drmarkoconnor.github.io/recwriter/network-command">&lt;h1&gt;git: Network commands&lt;/h1&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;fetch&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;retieves new objects and references from the remote repository&lt;/p&gt;
+&lt;/blockquote&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;push&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;adds new objects an references to the remotes repository&lt;/p&gt;
+&lt;/blockquote&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;pull&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;fetches and merges commits locally&lt;/p&gt;
+&lt;/blockquote&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;clone&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;copies a remote repository ( if creating with github make sure it is not empty to ensure tracking branches are created automatically&lt;/p&gt;
+&lt;/blockquote&gt;&lt;/li&gt;
+&lt;/ol&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Dr Mark O'Connor</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="git" />
+      
+        <category term="post_formatting" />
+      
+
+      
+        <summary type="html">git: Network commands</summary>
+      
+
+      
+      
+    </entry>
+  
+</feed>

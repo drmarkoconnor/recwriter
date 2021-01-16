@@ -1,0 +1,1175 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" >
+  <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
+  <link href="https://drmarkoconnor.github.io/recwriter/author/mark/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="https://drmarkoconnor.github.io/recwriter/" rel="alternate" type="text/html" />
+  <updated>2021-01-16T22:23:03+00:00</updated>
+  <id>https://drmarkoconnor.github.io/recwriter/author/mark/feed.xml</id>
+
+  
+  
+  
+
+  
+    <title type="html">old rectory writers | </title>
+  
+
+  
+    <subtitle>writing courses in the heart of north somerset - a perfect way to begin your writing journey</subtitle>
+  
+
+  
+
+  
+    
+      
+    
+  
+
+  
+  
+
+  
+    <entry>
+      <title type="html">There can be a much longer title set in the MyTitle KA</title>
+      <link href="https://drmarkoconnor.github.io/recwriter/Christmas" rel="alternate" type="text/html" title="There can be a much longer title set in the MyTitle KA" />
+      <published>2020-12-25T20:11:50+00:00</published>
+      <updated>2020-12-25T20:11:50+00:00</updated>
+      <id>https://drmarkoconnor.github.io/recwriter/Christmas</id>
+      <content type="html" xml:base="https://drmarkoconnor.github.io/recwriter/Christmas">&lt;h1&gt;Heading one - typing this directly in Tinderbox&lt;/h1&gt;
+
+&lt;h2&gt;Heading two - I have terminal open and running &lt;code&gt;bundle exec jekyll serve --livereload&lt;/code&gt;&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Visual Studio code shows files in folders based on git branch that is checked out&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;quote : I would like to find out if finder does this in some fashion as it is very cool&lt;/p&gt;
+&lt;/blockquote&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Dr Mark O'Connor</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="git" />
+      
+        <category term="tbx" />
+      
+        <category term="tinderbox" />
+      
+
+      
+        <summary type="html">Heading one - typing this directly in Tinderbox</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">More Git</title>
+      <link href="https://drmarkoconnor.github.io/recwriter/more-git" rel="alternate" type="text/html" title="More Git" />
+      <published>2020-12-04T20:12:21+00:00</published>
+      <updated>2020-12-04T20:12:21+00:00</updated>
+      <id>https://drmarkoconnor.github.io/recwriter/more-git</id>
+      <content type="html" xml:base="https://drmarkoconnor.github.io/recwriter/more-git">&lt;h1&gt;git: Merging commits from branches&lt;/h1&gt;
+
+&lt;h2&gt;1. Fast-forward merge&lt;/h2&gt;
+
+&lt;p&gt;
+  This can only be done if there are no other commits to the base branch since
+  the branching took place It is the deafult method that git adopts
+&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git checkout master&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git merge featureX&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git branch -d featureX&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2&gt;2. Merge commit&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;git checkout master&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git merge featureX&lt;/code&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;
+    there will be a message here to accept or not the merge B - a no
+    fast-forward merge means that a merge commit will always be created if you
+    want to force a merge commit use the following
+    &lt;code&gt;git merge --no-ff featureX&lt;/code&gt;
+  &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;code&gt;git branch -d featureX&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2&gt;3. Squash merge&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;code&gt;git checkout master&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;git merge --squash featureX&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;git commit&lt;/code&gt; a)accept or modify the squash message&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;git branch -D featureX&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2&gt;4. Rebase&lt;/h2&gt;
+
+&lt;p&gt;
+  see
+  &lt;a href=&quot;drafts5://open?uuid=E350B40F-DBFF-40DC-8C89-DC5A1D899195&quot;
+    &gt;this file&lt;/a
+  &gt;
+&lt;/p&gt;
+
+&lt;h1&gt;Resolving merge conflicts&lt;/h1&gt;
+
+&lt;p&gt;
+  Essentially any files with conflicts are placed into the working tree after
+  being modified by git - a decision has to involve judgment and the files with
+  modified content are marked up by git with &gt;&gt;&gt;&gt; and &amp;lt;&amp;lt;&amp;lt;&amp;lt; and can
+  be edited, saved, added and them committed.
+&lt;/p&gt;
+
+&lt;p&gt;
+  Again use &lt;code&gt;git log --oneline --graph --all&lt;/code&gt; to see the results and
+  check all is good
+&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;checkout master&lt;/li&gt;
+  &lt;li&gt;
+    merge featureX
+    &lt;ul&gt;
+      &lt;li&gt;a. CONFLICT - both modified fileA.txt&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;fix fileA.txt&lt;/li&gt;
+  &lt;li&gt;stage fileA.txt&lt;/li&gt;
+  &lt;li&gt;commit the merge commit&lt;/li&gt;
+  &lt;li&gt;delete the featureX branch label&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2&gt;resolving a merge conflict involves 3 commits&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;the tip of the current branch ( 'ours' or 'mine')&lt;/li&gt;
+  &lt;li&gt;the tip of the branch to be merged ('theirs')&lt;/li&gt;
+  &lt;li&gt;a common ancestor ( 'merge base')&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1&gt;Aborting a merge attempt&lt;/h1&gt;
+
+&lt;p&gt;&lt;code&gt;git merge --abort&lt;/code&gt;&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Dr Mark O'Connor</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="git" />
+      
+
+      
+        <summary type="html">git: Merging commits from branches</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">The Good Morrow</title>
+      <link href="https://drmarkoconnor.github.io/recwriter/the-good-morr" rel="alternate" type="text/html" title="The Good Morrow" />
+      <published>2020-08-15T20:09:49+01:00</published>
+      <updated>2020-08-15T20:09:49+01:00</updated>
+      <id>https://drmarkoconnor.github.io/recwriter/the-good-morr</id>
+      <content type="html" xml:base="https://drmarkoconnor.github.io/recwriter/the-good-morr">&lt;h1&gt;The Good-Morrow&lt;/h1&gt;
+
+&lt;h3&gt;by john donne&lt;/h3&gt;
+
+&lt;p&gt;
+  This doesn’t render nicely as the tbx note exports as html and not md (
+  because author page insert doesn’t work if not ) So use Drafts app to convert
+  text like this into html and use that in tbx which markup and quote html
+  option checked
+&lt;/p&gt;
+
+&lt;h1&gt;I wonder, by my troth, what thou and I&lt;/h1&gt;
+
+&lt;p&gt;
+  Did, till we loved? Were we not weaned till then? But sucked on country
+  pleasures, childishly? Or snorted we in the Seven Sleepers’ den? ’Twas so; but
+  this, all pleasures fancies be. If ever any beauty I did see, Which I desired,
+  and got, ’twas but a dream of thee.
+&lt;/p&gt;
+
+&lt;h1&gt;And now good-morrow to our waking souls,&lt;/h1&gt;
+
+&lt;p&gt;
+  Which watch not one another out of fear; For love, all love of other sights
+  controls, And makes one little room an everywhere. Let sea-discoverers to new
+  worlds have gone, Let maps to other, worlds on worlds have shown, Let us
+  possess one world, each hath one, and is one.
+&lt;/p&gt;
+
+&lt;h1&gt;My face in thine eye, thine in mine appears,&lt;/h1&gt;
+
+&lt;p&gt;
+  And true plain hearts do in the faces rest; Where can we find two better
+  hemispheres, Without sharp north, without declining west? Whatever dies, was
+  not mixed equally; If our two loves be one, or, thou and I Love so alike, that
+  none do slacken, none can die.
+&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Dr Mark O'Connor</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="poetry" />
+      
+
+      
+        <summary type="html">The Good-Morrow</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Setting post date with $MyDate</title>
+      <link href="https://drmarkoconnor.github.io/recwriter/setting-post" rel="alternate" type="text/html" title="Setting post date with $MyDate" />
+      <published>2020-02-01T19:45:06+00:00</published>
+      <updated>2020-02-01T19:45:06+00:00</updated>
+      <id>https://drmarkoconnor.github.io/recwriter/setting-post-</id>
+      <content type="html" xml:base="https://drmarkoconnor.github.io/recwriter/setting-post">&lt;p&gt;The date variable is set in the MyDate KA and does not have to relate to the date in the post&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Dr Mark O'Connor</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="post_formatting" />
+      
+
+      
+        <summary type="html">The date variable is set in the MyDate KA and does not have to relate to the date in the post</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Markup is converted to html by tiinderbox</title>
+      <link href="https://drmarkoconnor.github.io/recwriter/git-basics" rel="alternate" type="text/html" title="Markup is converted to html by tiinderbox" />
+      <published>2020-01-08T20:12:28+00:00</published>
+      <updated>2020-01-08T20:12:28+00:00</updated>
+      <id>https://drmarkoconnor.github.io/recwriter/git-basics</id>
+      <content type="html" xml:base="https://drmarkoconnor.github.io/recwriter/git-basics">&lt;h1&gt;git: Basic git set up for new projects including making/deleting a branch&lt;/h1&gt;
+
+&lt;h2&gt;git [command] [--flag] [arguments]&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;inside moc/repos&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mkdir [name of your new project]&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cd [name of your new project]&lt;/code&gt; 
+&lt;blockquote&gt;
+  &lt;p&gt;( move to the new directory )&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git init&lt;/code&gt;
+These are the basic steps to create a project that can be then version controlled by github.
+git will confirm that a .git directory has been created&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code&gt;ls -la&lt;/code&gt;
+will show the . .. .git structure now inside the new project&lt;/p&gt;
+&lt;/blockquote&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+echo &amp;gt;fileA.txt
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;this CLI creates an empty txt file&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;git add fileA.txt&lt;/code&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;this adds the file to the &lt;strong&gt;staging area&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git commit -m '_message_'&lt;/code&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;there are other -switches like -verbose&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;/blockquote&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code&gt;git branch&lt;/code&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;will list all the branches in the repos project and an asterisk indicates the current one&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;two command approach&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git branch featureX&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git checkout featureX&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;one command approach&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git checkout -b featureX&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;use the log function with graph to check&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;git log --oneline --graph&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;git checkout [name of branch]&lt;/code&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;this allows switching between branches&lt;/p&gt;
+&lt;/blockquote&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;File changes on branches&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;change the contents of the file whilst in the new branch&lt;/li&gt;
+&lt;li&gt;then change back to the master branch &lt;code&gt;git checkout master&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;open file and you will see that the changes to the file are not present ( as they were made under the featureX branch of which the master branch has no knowledge )&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;code&gt;use git log --oneline --graph --all&lt;/code&gt; to see all the commits attached to the branches in the repo&lt;/p&gt;
+
+&lt;p&gt;featureX branch has a more recent commit. Check back into this branch now&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git checkout featureX&lt;/code&gt; &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;add another change to the file and add it to stage and then commit it.
+There are now two commits on the featureX branch
+can use the &lt;code&gt;HEAD~&lt;/code&gt; tilde mark to checkout a previous commit&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;code&gt;git checkout HEAD~&lt;/code&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;this will raise a warning about a DETACHED HEAD state&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;go back to master ( by &lt;code&gt;git checkout master&lt;/code&gt; )&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Let's say that you &lt;strong&gt;don't want to merge&lt;/strong&gt; any changes made on the new file ( merging coming later )  and want to delete the branch &lt;strong&gt;featureX&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git branch  -d featureX&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This however will only produce a warning becasue there are two commits that will be left dangling. If you want to keep them you could create a new branch for them.&lt;/p&gt;
+
+&lt;p&gt;However the warning gives information about how you can delete with a -D option switch.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;ie &lt;code&gt;git branch  -D featureX&lt;/code&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;use &lt;code&gt;git log&lt;/code&gt; and &lt;code&gt;git status&lt;/code&gt; frequently to see where you are&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;(If you are interested) Want to &quot;undo&quot; the deleting of the featureX branch?
+Execute &lt;code&gt;git reflog&lt;/code&gt; . This shows the local history of HEAD references. Since Git doesn't immediately delete commits, you can find the SHA-1 of your most recent featureX branch there.&lt;/p&gt;
+
+&lt;p&gt;Copy the SHA-1 of the &quot;add feature bigger mistake&quot; commit. Execute git checkout &lt;strong&gt;-b&lt;/strong&gt; &lt;code&gt;[this switch doesn't seem to work]??&lt;/code&gt; featureX [SHA-1 YOU COPIED] .&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;use &lt;code&gt;git log&lt;/code&gt; and &lt;code&gt;git status&lt;/code&gt; frequently to see where you are&lt;/li&gt;
+&lt;/ul&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Dr Mark O'Connor</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="git" />
+      
+        <category term="tech" />
+      
+
+      
+        <summary type="html">git: Basic git set up for new projects including making/deleting a branch</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Set on 3/1/2020 to post on 4th January git Netowrk commands</title>
+      <link href="https://drmarkoconnor.github.io/recwriter/network-command" rel="alternate" type="text/html" title="Set on 3/1/2020 to post on 4th January git Netowrk commands" />
+      <published>2020-01-03T20:10:46+00:00</published>
+      <updated>2020-01-03T20:10:46+00:00</updated>
+      <id>https://drmarkoconnor.github.io/recwriter/network-command</id>
+      <content type="html" xml:base="https://drmarkoconnor.github.io/recwriter/network-command">&lt;h1&gt;git: Network commands&lt;/h1&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;fetch&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;retieves new objects and references from the remote repository&lt;/p&gt;
+&lt;/blockquote&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;push&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;adds new objects an references to the remotes repository&lt;/p&gt;
+&lt;/blockquote&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;pull&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;fetches and merges commits locally&lt;/p&gt;
+&lt;/blockquote&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;clone&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;copies a remote repository ( if creating with github make sure it is not empty to ensure tracking branches are created automatically&lt;/p&gt;
+&lt;/blockquote&gt;&lt;/li&gt;
+&lt;/ol&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Dr Mark O'Connor</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="git" />
+      
+        <category term="post_formatting" />
+      
+
+      
+        <summary type="html">git: Network commands</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">How this website is built - for free!</title>
+      <link href="https://drmarkoconnor.github.io/recwriter/building-this-website" rel="alternate" type="text/html" title="How this website is built - for free!" />
+      <published>2017-07-27T11:00:00+01:00</published>
+      <updated>2017-07-27T11:00:00+01:00</updated>
+      <id>https://drmarkoconnor.github.io/recwriter/building-this-website</id>
+      <content type="html" xml:base="https://drmarkoconnor.github.io/recwriter/building-this-website">&lt;h1 id=&quot;getting-jasper2-to-work-on-github-pages&quot;&gt;Getting jasper2 to work on github pages&lt;/h1&gt;
+
+&lt;h2 id=&quot;nutshell&quot;&gt;nutshell&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Clone &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyller/jasper2&lt;/code&gt; to local repo &lt;code class=&quot;highlighter-rouge&quot;&gt;jasper2&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Change _config.yml&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; baseurl: /recwriter/
+ url: https://drmarkoconnor.github.io
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;In github create repo subfolder &lt;code class=&quot;highlighter-rouge&quot;&gt;recwriter&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;In local &lt;code class=&quot;highlighter-rouge&quot;&gt;jasper2&lt;/code&gt; –&amp;gt; in terminal –&amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;JEKYLL_ENV=production bundle exec jekyll serve --livereload&lt;/code&gt; –&amp;gt; outputs to–&amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;jasper2-pages&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;jasper2-pages&lt;/code&gt; –&amp;gt;is then git pushed –&amp;gt; github recwriters repo main branch ie –&amp;gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	git add *
+	git commit -m 'suitable message reflected any changes'
+	git push origin main
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;After 1 to 5 mins the site should be live on ; &lt;code class=&quot;highlighter-rouge&quot;&gt;drmarkoconnor.github.io/recwriters/&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;produces Auto-regeneration: enabled for ‘/Users/moc/repos/jasper2’
+Server address: http://127.0.0.1:4000/recwriter//
+Server running… press ctrl-c to stop.&lt;/p&gt;
+
+&lt;p&gt;If this looks like it is running ok inthe local environment then jasper2-pages ( the produced static site ) needs pushiing to github&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;cd NAMEofREPO&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; git add *
+ git commit -m 'updating produced site or other relevant change message'
+ git push
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;(prior to git push you may want to check you have the remote set up properly)
+&lt;code class=&quot;highlighter-rouge&quot;&gt;git push --set-upstream origin BRANCH NAME&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;NB - not sure that a project subfolder needs a gh-pages branch any more ( Jan 2021 )&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/us-20.jpg#full&quot; alt=&quot;full width image with hash tag&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;wait for github to build the site and then check on ;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;[http://usernameGITHUB.IO/projectname/](#)&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Careful that exclude area of _config.yml doesn’t include assets/css as site won’t render without the css. Not sure why jasper2 produces this.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+	**exclude:**
+  - node_modules
+  - vendor
+  - .travis.yml
+  - Gemfile
+  - Gemfile.lock
+  - GHOST.txt
+  - gulpfile.js
+  - LICENSE
+  - package.json
+  - package-lock.json
+  - Rakefile
+  - README.md
+  - changelog.md
+  - &quot;*.Rmd&quot;
+  - .git*
+
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;_plugins&quot;&gt;_plugins&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll-autogenerator.rb&lt;/code&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll-capitalize-all.rb&lt;/code&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll-tagsgenerator.rb&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Make sure these remain in jasper2 - they are not supporteed by github which is why local gneration produced jasper2-pages ( the static site with js etc…) which is git pushed to the main github.io or project repo&lt;/p&gt;
+
+&lt;h1 id=&quot;todo&quot;&gt;todo&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;create dev branch in local and remote and see if can switch using github settings to display live - if dev is good merge onto main for new live&lt;/li&gt;
+  &lt;li&gt;tbx site to upload&lt;/li&gt;
+  &lt;li&gt;collect images relevant to writing&lt;/li&gt;
+  &lt;li&gt;add in fotolio images&lt;/li&gt;
+  &lt;li&gt;add in html5 bootstrap page to check works&lt;/li&gt;
+  &lt;li&gt;write short summary blog on how to update ( ie edit this file ) including the two youtube entries as insets&lt;/li&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;expand-to-include-blog-re-tinderbox-with-links-etc&quot;&gt;Expand to include blog re tinderbox with links etc…&lt;/h2&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Dr Mark O'Connor</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="tech" />
+      
+
+      
+        <summary type="html">Getting jasper2 to work on github pages</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Styling</title>
+      <link href="https://drmarkoconnor.github.io/recwriter/style-tbx-mar" rel="alternate" type="text/html" title="Styling" />
+      <published>1999-01-01T20:18:29+00:00</published>
+      <updated>1999-01-01T20:18:29+00:00</updated>
+      <id>https://drmarkoconnor.github.io/recwriter/style-tbx-mar</id>
+      <content type="html" xml:base="https://drmarkoconnor.github.io/recwriter/style-tbx-mar">&lt;p&gt;Below is just about everything you’ll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.Paragraph tags removed - complare the effect with the original post&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;is this the same as horizontal ruler
+&lt;hr /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;heading1&quot;&gt;Heading 1&lt;/h1&gt;
+
+&lt;h1&gt;heading 1 with markup&lt;/h1&gt;
+
+&lt;h2 id=&quot;heading2&quot;&gt;Heading 2&lt;/h2&gt;
+
+&lt;h2&gt;heading 2 with markup&lt;/h2&gt;
+
+&lt;h3 id=&quot;heading3&quot;&gt;Heading 3&lt;/h3&gt;
+
+&lt;h3&gt;heading 3 with markup&lt;/h3&gt;
+
+&lt;h4 id=&quot;heading4&quot;&gt;Heading 4&lt;/h4&gt;
+
+&lt;h4&gt;heading 4 with markup&lt;/h4&gt;
+
+&lt;h5 id=&quot;heading5&quot;&gt;Heading 5&lt;/h5&gt;
+
+&lt;h5&gt;heading 5 with markup&lt;/h5&gt;
+
+&lt;h6 id=&quot;heading6&quot;&gt;Heading 6&lt;/h6&gt;
+
+&lt;h6&gt;heading 6 with markup&lt;/h6&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, &lt;a title=&quot;test link&quot; href=&quot;#&quot;&gt;test link&lt;/a&gt; adipiscing elit. &lt;strong&gt;This is strong.&lt;/strong&gt; Nullam dignissim convallis est. Quisque aliquam. &lt;em&gt;This is emphasized.&lt;/em&gt; Donec faucibus. Nunc iaculis suscipit dui. 5&lt;sup&gt;3&lt;/sup&gt; = 125. Water is H&lt;sub&gt;2&lt;/sub&gt;O. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. &lt;cite&gt;The New York Times&lt;/cite&gt; (That’s a citation). &lt;span style=&quot;text-decoration:underline;&quot;&gt;Underline.&lt;/span&gt; Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.&lt;/p&gt;
+
+&lt;p&gt;&lt;abbr title=&quot;Hyper Text Markup Language&quot;&gt;HTML&lt;/abbr&gt; and &lt;abbr title=&quot;Cascading Style Sheets&quot;&gt;CSS&lt;/abbr&gt; are our tools. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.  Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. To copy a file type &lt;code&gt;COPY &lt;var&gt;filename&lt;/var&gt;&lt;/code&gt;. &lt;del&gt;Dinner’s at 5:00.&lt;/del&gt; &lt;ins&gt;Let’s make that 7.&lt;/ins&gt; This &lt;span style=&quot;text-decoration:line-through;&quot;&gt;text&lt;/span&gt; has been struck.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;media&quot;&gt;Media&lt;/h2&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.&lt;/p&gt;
+
+&lt;h3 id=&quot;bigimage&quot;&gt;Big Image&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://demo.ghost.io/content/images/2014/09/testimg1.jpeg&quot; alt=&quot;Test Image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.&lt;/p&gt;
+
+&lt;h3 id=&quot;smallimage&quot;&gt;Small Image&lt;/h3&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://demo.ghost.io/content/images/2014/09/testimg2.jpg&quot; alt=&quot;Small Test Image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Labore et dolore.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;listtypes&quot;&gt;List Types&lt;/h2&gt;
+
+&lt;h3 id=&quot;definitionlist&quot;&gt;Definition List&lt;/h3&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;Definition List Title&lt;/dt&gt;
+&lt;dd&gt;This is a definition list division.&lt;/dd&gt;
+&lt;dt&gt;Definition&lt;/dt&gt;
+&lt;dd&gt;An exact statement or description of the nature, scope, or meaning of something: &lt;em&gt;our definition of what constitutes poetry.&lt;/em&gt;&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;h3 id=&quot;orderedlist&quot;&gt;Ordered List&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;List Item 1  &lt;/li&gt;
+&lt;li&gt;List Item 2 &lt;br /&gt;
+&lt;ol&gt;&lt;li&gt;Nested list item A&lt;/li&gt;
+&lt;li&gt;Nested list item B&lt;/li&gt;&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;List Item 3&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;unorderedlist&quot;&gt;Unordered List&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;List Item 1&lt;/li&gt;
+&lt;li&gt;List Item 2
+&lt;ul&gt;&lt;li&gt;Nested list item A&lt;/li&gt;
+&lt;li&gt;Nested list item B&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;List Item 3&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;table&quot;&gt;Table&lt;/h2&gt;
+
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;th&gt;Table Header 1&lt;/th&gt;
+&lt;th&gt;Table Header 2&lt;/th&gt;
+&lt;th&gt;Table Header 3&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Division 1&lt;/td&gt;
+&lt;td&gt;Division 2&lt;/td&gt;
+&lt;td&gt;Division 3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&quot;even&quot;&gt;
+&lt;td&gt;Division 1&lt;/td&gt;
+&lt;td&gt;Division 2&lt;/td&gt;
+&lt;td&gt;Division 3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Division 1&lt;/td&gt;
+&lt;td&gt;Division 2&lt;/td&gt;
+&lt;td&gt;Division 3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;preformattedtext&quot;&gt;Preformatted Text&lt;/h2&gt;
+
+&lt;p&gt;Typographically, preformatted text is not the same thing as code. Sometimes, a faithful execution of the text requires preformatted text that may not have anything to do with code. Most browsers use Courier and that’s a good default — with one slight adjustment, Courier 10 Pitch over regular Courier for Linux users.&lt;/p&gt;
+
+&lt;h3 id=&quot;code&quot;&gt;Code&lt;/h3&gt;
+
+&lt;p&gt;Code can be presented inline, like &lt;code&gt;&amp;lt;?php bloginfo('stylesheet_url'); ?&amp;gt;&lt;/code&gt;, or within a &lt;code&gt;&amp;lt;pre&amp;gt;&lt;/code&gt; block. Because we have more specific typographic needs for code, we’ll specify Consolas and Monaco ahead of the browser-defined monospace font.&lt;/p&gt;
+
+&lt;p&gt;Code blocks can also be inserted with the highlight tag as below:&lt;/p&gt;
+
+&lt;pre&gt;
+    
+    {% highlight language-x %}
+    # some code
+    {% endhighlight %}
+    
+&lt;/pre&gt;
+
+&lt;p&gt;More information about code highlighting in jekyll can be found  &lt;a href=&quot;https://jekyllrb.com/docs/templates/#code-snippet-highlighting&quot;&gt;in Jekyll documentation&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;These area a couple of examples showing the resulting highlighted code:&lt;/p&gt;
+
+&lt;p&gt;&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;c&quot;&gt;/* css code sample */&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;h1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;container&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;err&quot;&gt;&amp;lt;pre&amp;gt;&amp;lt;code&amp;gt;&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nl&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;-240px&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;err&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;c1&quot;&gt;// javascript code sample&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ajax&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'POST'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'backend.php'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;q=&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;myform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;serialize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;success&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// on success use return data here&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;xhr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;exception&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// if ajax fails display error alert&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;ajax error response type &quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;&lt;/p&gt;
+
+&lt;p&gt;Now you can also use &lt;a href=&quot;https://highlightjs.org/&quot;&gt;highlight.js&lt;/a&gt;.
+For more on how to use it and on the available styles check their
+&lt;a href=&quot;https://highlightjs.org/static/demo/&quot;&gt;demo&lt;/a&gt; and
+&lt;a href=&quot;http://highlightjs.readthedocs.org/en/latest/&quot;&gt;documentation&lt;/a&gt; pages.&lt;/p&gt;
+
+&lt;div class=&quot;system&quot;&gt;
+&lt;pre&gt;&lt;code class=&quot;swift&quot;&gt;// Swift code sample
+import Foundation
+
+@objc class Person: Entity {
+  var name: String!
+  var age:  Int!
+
+  init(name: String, age: Int) {
+    /* /* ... */ */
+  }
+
+  // Return a descriptive string for this person
+  func description(offset: Int = 0) -&gt; String {
+    return &quot;\(name) is \(age + offset) years old&quot;
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;blockquotes&quot;&gt;Blockquotes&lt;/h2&gt;
+
+&lt;p&gt;Let’s keep it simple. Italics are good to help set it off from the body text. Be sure to style the citation.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Good afternoon, gentlemen. I am a HAL 9000 computer. I became operational at the H.A.L. plant in Urbana, Illinois on the 12th of January 1992. My instructor was Mr. Langley, and he taught me to sing a song. If you’d like to hear it I can sing it for you. &lt;cite&gt;— &lt;a href=&quot;http://en.wikipedia.org/wiki/HAL_9000&quot;&gt;HAL 9000&lt;/a&gt;&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;And here’s a bit of trailing text.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;textlevelsemantics&quot;&gt;Text-level semantics&lt;/h2&gt;
+
+&lt;p&gt;The &lt;a href=&quot;#&quot;&gt;a element&lt;/a&gt; example &lt;br /&gt;
+The &lt;abbr&gt;abbr element&lt;/abbr&gt; and &lt;abbr title=&quot;Title text&quot;&gt;abbr element with title&lt;/abbr&gt; examples &lt;br /&gt;
+The &lt;b&gt;b element&lt;/b&gt; example &lt;br /&gt;
+The &lt;cite&gt;cite element&lt;/cite&gt; example &lt;br /&gt;
+The &lt;code&gt;code element&lt;/code&gt; example &lt;br /&gt;
+The &lt;del&gt;del element&lt;/del&gt; example &lt;br /&gt;
+The &lt;dfn&gt;dfn element&lt;/dfn&gt; and &lt;dfn title=&quot;Title text&quot;&gt;dfn element with title&lt;/dfn&gt; examples &lt;br /&gt;
+The &lt;em&gt;em element&lt;/em&gt; example &lt;br /&gt;
+The &lt;i&gt;i element&lt;/i&gt; example &lt;br /&gt;
+The &lt;ins&gt;ins element&lt;/ins&gt; example &lt;br /&gt;
+The &lt;kbd&gt;kbd element&lt;/kbd&gt; example &lt;br /&gt;
+The &lt;mark&gt;mark element&lt;/mark&gt; example &lt;br /&gt;
+The &lt;q&gt;q element &lt;q&gt;inside&lt;/q&gt; a q element&lt;/q&gt; example &lt;br /&gt;
+The &lt;s&gt;s element&lt;/s&gt; example &lt;br /&gt;
+The &lt;samp&gt;samp element&lt;/samp&gt; example &lt;br /&gt;
+The &lt;small&gt;small element&lt;/small&gt; example &lt;br /&gt;
+The &lt;span&gt;span element&lt;/span&gt; example &lt;br /&gt;
+The &lt;strong&gt;strong element&lt;/strong&gt; example &lt;br /&gt;
+The &lt;sub&gt;sub element&lt;/sub&gt; example &lt;br /&gt;
+The &lt;sup&gt;sup element&lt;/sup&gt; example &lt;br /&gt;
+The &lt;var&gt;var element&lt;/var&gt; example &lt;br /&gt;
+The &lt;u&gt;u element&lt;/u&gt; example&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;forms&quot;&gt;Forms&lt;/h2&gt;
+
+&lt;form&gt;
+&lt;fieldset&gt;
+&lt;legend&gt;Inputs as descendents of labels (form legend)&lt;/legend&gt;
+&lt;label&gt;
+&lt;b&gt;Text input&lt;/b&gt;
+&lt;input type=&quot;text&quot; value=&quot;default value&quot;&gt;
+&lt;/label&gt;
+&lt;label&gt;
+&lt;b&gt;Email input&lt;/b&gt;
+&lt;input type=&quot;email&quot;&gt;
+&lt;/label&gt;
+&lt;label&gt;
+&lt;b&gt;Search input&lt;/b&gt;
+&lt;input type=&quot;search&quot;&gt;
+&lt;/label&gt;
+&lt;label&gt;
+&lt;b&gt;Tel input&lt;/b&gt;
+&lt;input type=&quot;tel&quot;&gt;
+&lt;/label&gt;
+&lt;label&gt;
+&lt;b&gt;URL input&lt;/b&gt;
+&lt;input type=&quot;url&quot; placeholder=&quot;http://&quot;&gt;
+&lt;/label&gt;
+&lt;label&gt;
+&lt;b&gt;Password input&lt;/b&gt;
+&lt;input type=&quot;password&quot; value=&quot;password&quot;&gt;
+&lt;/label&gt;
+&lt;label&gt;
+&lt;b&gt;File input&lt;/b&gt;
+&lt;input type=&quot;file&quot;&gt;
+&lt;/label&gt;
+&lt;label&gt;
+&lt;b&gt;Radio input&lt;/b&gt;
+&lt;input type=&quot;radio&quot; name=&quot;rad&quot;&gt;
+&lt;/label&gt;
+&lt;label&gt;
+&lt;b&gt;Checkbox input&lt;/b&gt;
+&lt;input type=&quot;checkbox&quot;&gt;
+&lt;/label&gt;
+&lt;label&gt;
+&lt;input type=&quot;radio&quot; name=&quot;rad&quot;&gt; Radio input
+&lt;/label&gt;
+&lt;label&gt;
+&lt;input type=&quot;checkbox&quot;&gt; Checkbox input
+&lt;/label&gt;
+&lt;label&gt;
+&lt;b&gt;Select field&lt;/b&gt;
+&lt;select&gt;
+&lt;option&gt;Option 01&lt;/option&gt;
+&lt;option&gt;Option 02&lt;/option&gt;
+&lt;/select&gt;
+&lt;/label&gt;
+&lt;label&gt;
+&lt;b&gt;Textarea&lt;/b&gt;
+&lt;textarea cols=&quot;30&quot; rows=&quot;5&quot; &gt;Textarea text&lt;/textarea&gt;
+&lt;/label&gt;
+&lt;/fieldset&gt;
+
+&lt;fieldset&gt;
+&lt;legend&gt;Clickable inputs and buttons&lt;/legend&gt;
+&lt;input type=&quot;image&quot; src=&quot;http://placekitten.com/90/24&quot; alt=&quot;Image (input)&quot;&gt;
+&lt;input type=&quot;reset&quot; value=&quot;Reset (input)&quot;&gt;
+&lt;input type=&quot;button&quot; value=&quot;Button (input)&quot;&gt;
+&lt;input type=&quot;submit&quot; value=&quot;Submit (input)&quot;&gt;
+&lt;button type=&quot;reset&quot;&gt;Reset (button)&lt;/button&gt;
+&lt;button type=&quot;button&quot;&gt;Button (button)&lt;/button&gt;
+&lt;button type=&quot;submit&quot;&gt;Submit (button)&lt;/button&gt;
+&lt;/fieldset&gt;
+
+&lt;fieldset id=&quot;boxsize&quot;&gt;
+&lt;legend&gt;box-sizing tests&lt;/legend&gt;
+&lt;div&gt;&lt;input type=&quot;text&quot; value=&quot;text&quot;&gt;&lt;/div&gt;
+&lt;div&gt;&lt;input type=&quot;email&quot; value=&quot;email&quot;&gt;&lt;/div&gt;
+&lt;div&gt;&lt;input type=&quot;search&quot; value=&quot;search&quot;&gt;&lt;/div&gt;
+&lt;div&gt;&lt;input type=&quot;url&quot; value=&quot;http://example.com&quot;&gt;&lt;/div&gt;
+&lt;div&gt;&lt;input type=&quot;password&quot; value=&quot;password&quot;&gt;&lt;/div&gt;
+
+&lt;div&gt;&lt;input type=&quot;color&quot; value=&quot;#000000&quot;&gt;&lt;/div&gt;
+&lt;div&gt;&lt;input type=&quot;number&quot; value=&quot;5&quot;&gt;&lt;/div&gt;
+&lt;div&gt;&lt;input type=&quot;range&quot; value=&quot;10&quot;&gt;&lt;/div&gt;
+&lt;div&gt;&lt;input type=&quot;date&quot; value=&quot;1970-01-01&quot;&gt;&lt;/div&gt;
+&lt;div&gt;&lt;input type=&quot;month&quot; value=&quot;1970-01&quot;&gt;&lt;/div&gt;
+&lt;div&gt;&lt;input type=&quot;week&quot; value=&quot;1970-W01&quot;&gt;&lt;/div&gt;
+&lt;div&gt;&lt;input type=&quot;time&quot; value=&quot;18:23&quot;&gt;&lt;/div&gt;
+&lt;div&gt;&lt;input type=&quot;datetime&quot; value=&quot;1970-01-01T00:00:00Z&quot;&gt;&lt;/div&gt;
+&lt;div&gt;&lt;input type=&quot;datetime-local&quot; value=&quot;1970-01-01T00:00&quot;&gt;&lt;/div&gt;
+
+&lt;div&gt;&lt;input type=&quot;radio&quot;&gt;&lt;/div&gt;
+&lt;div&gt;&lt;input type=&quot;checkbox&quot;&gt;&lt;/div&gt;
+
+&lt;div&gt;&lt;select&gt;&lt;option&gt;Option 01&lt;/option&gt;&lt;option&gt;Option 02&lt;/option&gt;&lt;/select&gt;&lt;/div&gt;
+&lt;div&gt;&lt;textarea cols=&quot;30&quot; rows=&quot;5&quot; &gt;Textarea text&lt;/textarea&gt;&lt;/div&gt;
+
+&lt;div&gt;&lt;input type=&quot;image&quot; src=&quot;http://placekitten.com/90/24&quot; alt=&quot;Image (input)&quot;&gt;&lt;/div&gt;
+&lt;div&gt;&lt;input type=&quot;reset&quot; value=&quot;Reset (input)&quot;&gt;&lt;/div&gt;
+&lt;div&gt;&lt;input type=&quot;button&quot; value=&quot;Button (input)&quot;&gt;&lt;/div&gt;
+&lt;div&gt;&lt;input type=&quot;submit&quot; value=&quot;Submit (input)&quot;&gt;&lt;/div&gt;
+
+&lt;div&gt;&lt;button type=&quot;reset&quot;&gt;Reset (button)&lt;/button&gt;&lt;/div&gt;
+&lt;div&gt;&lt;button type=&quot;button&quot;&gt;Button (button)&lt;/button&gt;&lt;/div&gt;
+&lt;div&gt;&lt;button type=&quot;submit&quot;&gt;Submit (button)&lt;/button&gt;&lt;/div&gt;
+&lt;/fieldset&gt;
+&lt;/form&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;embeds&quot;&gt;Embeds&lt;/h2&gt;
+
+&lt;p&gt;Sometimes all you want to do is embed a little love from another location and set your post alive.&lt;/p&gt;
+
+&lt;h3 id=&quot;video&quot;&gt;Video&lt;/h3&gt;
+
+&lt;p&gt;Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
+
+&lt;iframe src=&quot;//player.vimeo.com/video/103224792?title=0&amp;amp;byline=0&amp;amp;portrait=0&quot; width=&quot;600&quot; height=&quot;338&quot; frameborder=&quot;0&quot; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+
+&lt;h3 id=&quot;slides&quot;&gt;Slides&lt;/h3&gt;
+
+&lt;p&gt;Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
+
+&lt;script async class=&quot;speakerdeck-embed&quot; data-id=&quot;34d2856027ce01316b5d621ab8e7d421&quot; data-ratio=&quot;1.33333333333333&quot; src=&quot;//speakerdeck.com/assets/embed.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;Culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+
+&lt;h3 id=&quot;audio&quot;&gt;Audio&lt;/h3&gt;
+
+&lt;p&gt;Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
+
+&lt;iframe width=&quot;100%&quot; height=&quot;450&quot; scrolling=&quot;no&quot; frameborder=&quot;no&quot; src=&quot;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/169381837&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;visual=true&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+
+&lt;h3 id=&quot;code&quot;&gt;Code&lt;/h3&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.&lt;/p&gt;
+
+&lt;p&gt;&lt;div data-height=&quot;268&quot; data-theme-id=&quot;0&quot; data-slug-hash=&quot;bcqhe&quot; data-default-tab=&quot;js&quot; data-user=&quot;rglazebrook&quot; class='codepen'&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var c = new Sketch.create({autoclear: false}),
+    bigCircle = 50,
+    littleCircle = 5,
+    // The velocity value determines how much to move the spinner head (in radians).
+    velocity = 0.105,
+    hue = 0,
+    // The alpha value below determines the length of the spinner&amp;#39;s tail.
+    bg = &amp;#39;rgba(40,40,40,.075)&amp;#39;;
+    Spinner = function() {};
+
+Spinner.prototype.setup = function() {
+  this.x = c.width / 2;
+  this.y = c.height / 2 - bigCircle;
+  this.rotation = 0;
+}
+Spinner.prototype.update = function() {
+  this.rotation += velocity;
+  this.rotation = this.rotation % TWO_PI;
+  this.x = c.width /2 + cos(this.rotation) * bigCircle;
+  this.y = c.height / 2 + sin(this.rotation) * bigCircle;
+}
+Spinner.prototype.draw = function() {
+  c.fillStyle = &amp;#39;hsl(&amp;#39;+hue+&amp;#39;,50%,50%)&amp;#39;;
+  c.beginPath();
+  c.arc(this.x, this.y, littleCircle, 0, TWO_PI);
+  c.fill();
+  c.closePath();
+}
+c.setup = function() {
+  spinner = new Spinner();
+  spinner.setup();
+}
+c.update = function() {
+  spinner.update();
+  hue = ++hue % 360;
+}
+c.draw = function() {
+  spinner.draw();
+  c.fillStyle = bg;
+  c.fillRect(0,0,c.width,c.height);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;See the Pen &lt;a href='http://codepen.io/rglazebrook/pen/bcqhe/'&gt;Simple Rotating Spinner&lt;/a&gt; by Rob Glazebrook (&lt;a href='http://codepen.io/rglazebrook'&gt;@rglazebrook&lt;/a&gt;) on &lt;a href='http://codepen.io'&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;script async src=&quot;//codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Isn't it beautiful?&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Dr Mark O'Connor</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="markdown" />
+      
+        <category term="post_formatting" />
+      
+
+      
+        <summary type="html">Below is just about everything you’ll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.Paragraph tags removed - complare the effect with the original post</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Enjoy tthe nearby coast</title>
+      <link href="https://drmarkoconnor.github.io/recwriter/wow" rel="alternate" type="text/html" title="Enjoy tthe nearby coast" />
+      <published>1989-04-03T20:08:00+01:00</published>
+      <updated>1989-04-03T20:08:00+01:00</updated>
+      <id>https://drmarkoconnor.github.io/recwriter/wow</id>
+      <content type="html" xml:base="https://drmarkoconnor.github.io/recwriter/wow">&lt;p&gt;
+  Visit nearby Clevedon a Victorian seaside town during your stay at the old
+  rectory.
+&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Dr Mark O'Connor</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="residential" />
+      
+
+      
+        <summary type="html">Visit nearby Clevedon a Victorian seaside town during your stay at the old rectory.</summary>
+      
+
+      
+      
+    </entry>
+  
+</feed>

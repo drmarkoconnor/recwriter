@@ -2,9 +2,113 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> - Articles</title>
-    <description>The professional publishing platform</description>
+    <description>writing courses in the heart of north somerset - a perfect way to begin your writing journey</description>
     <link>
     https://drmarkoconnor.github.io</link>
+    
+      
+      <item>
+        <title>There can be a much longer title set in the MyTitle KA</title>
+        
+          <description>&lt;h1&gt;Heading one - typing this directly in Tinderbox&lt;/h1&gt;
+
+</description>
+        
+        <pubDate>Fri, 25 Dec 2020 20:11:50 +0000</pubDate>
+        <link>
+        https://drmarkoconnor.github.io/Christmas</link>
+        <guid isPermaLink="true">https://drmarkoconnor.github.io/Christmas</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>More Git</title>
+        
+          <description>&lt;h1&gt;git: Merging commits from branches&lt;/h1&gt;
+
+</description>
+        
+        <pubDate>Fri, 04 Dec 2020 20:12:21 +0000</pubDate>
+        <link>
+        https://drmarkoconnor.github.io/more-git</link>
+        <guid isPermaLink="true">https://drmarkoconnor.github.io/more-git</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>The Good Morrow</title>
+        
+          <description>&lt;h1&gt;The Good-Morrow&lt;/h1&gt;
+
+</description>
+        
+        <pubDate>Sat, 15 Aug 2020 20:09:49 +0100</pubDate>
+        <link>
+        https://drmarkoconnor.github.io/the-good-morr</link>
+        <guid isPermaLink="true">https://drmarkoconnor.github.io/the-good-morr</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Setting post date with $MyDate</title>
+        
+          <description>&lt;p&gt;The date variable is set in the MyDate KA and does not have to relate to the date in the post&lt;/p&gt;
+</description>
+        
+        <pubDate>Sat, 01 Feb 2020 19:45:06 +0000</pubDate>
+        <link>
+        https://drmarkoconnor.github.io/setting-post</link>
+        <guid isPermaLink="true">https://drmarkoconnor.github.io/setting-post</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Markup is converted to html by tiinderbox</title>
+        
+          <description>&lt;h1&gt;git: Basic git set up for new projects including making/deleting a branch&lt;/h1&gt;
+
+</description>
+        
+        <pubDate>Wed, 08 Jan 2020 20:12:28 +0000</pubDate>
+        <link>
+        https://drmarkoconnor.github.io/git-basics</link>
+        <guid isPermaLink="true">https://drmarkoconnor.github.io/git-basics</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Set on 3/1/2020 to post on 4th January git Netowrk commands</title>
+        
+          <description>&lt;h1&gt;git: Network commands&lt;/h1&gt;
+
+</description>
+        
+        <pubDate>Fri, 03 Jan 2020 20:10:46 +0000</pubDate>
+        <link>
+        https://drmarkoconnor.github.io/network-command</link>
+        <guid isPermaLink="true">https://drmarkoconnor.github.io/network-command</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>How this website is built - for free!</title>
+        
+          <description>&lt;h1 id=&quot;getting-jasper2-to-work-on-github-pages&quot;&gt;Getting jasper2 to work on github pages&lt;/h1&gt;
+
+</description>
+        
+        <pubDate>Thu, 27 Jul 2017 11:00:00 +0100</pubDate>
+        <link>
+        https://drmarkoconnor.github.io/building-this-website</link>
+        <guid isPermaLink="true">https://drmarkoconnor.github.io/building-this-website</guid>
+      </item>
+      
     
       
       <item>
@@ -272,6 +376,38 @@
         <link>
         https://drmarkoconnor.github.io/a-full-and-comprehensive-style-test</link>
         <guid isPermaLink="true">https://drmarkoconnor.github.io/a-full-and-comprehensive-style-test</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Styling</title>
+        
+          <description>&lt;p&gt;Below is just about everything you’ll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.Paragraph tags removed - complare the effect with the original post&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Fri, 01 Jan 1999 20:18:29 +0000</pubDate>
+        <link>
+        https://drmarkoconnor.github.io/style-tbx-mar</link>
+        <guid isPermaLink="true">https://drmarkoconnor.github.io/style-tbx-mar</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Enjoy tthe nearby coast</title>
+        
+          <description>&lt;p&gt;
+  Visit nearby Clevedon a Victorian seaside town during your stay at the old
+  rectory.
+&lt;/p&gt;
+</description>
+        
+        <pubDate>Mon, 03 Apr 1989 20:08:00 +0100</pubDate>
+        <link>
+        https://drmarkoconnor.github.io/wow</link>
+        <guid isPermaLink="true">https://drmarkoconnor.github.io/wow</guid>
       </item>
       
     

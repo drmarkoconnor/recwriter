@@ -34,13 +34,13 @@
     <![endif]-->
     
     <!-- This tag outputs SEO meta+structured data and other important settings -->
-    <meta name="description" content="The professional publishing platform" />
-    <link rel="shortcut icon" href="https://drmarkoconnor.github.io/recwriter/assets/images/favicon.png" type="image/png" />
+    <meta name="description" content="writing courses in the heart of north somerset - a perfect way to begin your writing journey" />
+    <link rel="shortcut icon" href="https://drmarkoconnor.github.io/recwriter/" type="image/png" />
     <link rel="canonical" href="https://drmarkoconnor.github.io/recwriter/a-full-and-comprehensive-style-test" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
 
      <!--title below is coming from _includes/dynamic_title-->
-    <meta property="og:site_name" content="mocmocmoc" />
+    <meta property="og:site_name" content="old rectory writers" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="A Full and Comprehensive Style Test" />
     <meta property="og:description" content="Below is just about everything you’ll need to style in the theme. Check the source code to see the many embedded elements within paragraphs. Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Lorem ipsum dolor sit amet, test link adipiscing elit. This is strong. Nullam dignissim" />
@@ -56,7 +56,7 @@
     <meta name="twitter:url" content="https://drmarkoconnor.github.io/recwriter/" />
     <meta name="twitter:image" content="https://drmarkoconnor.github.io/recwriter/assets/images/bear.jpg" />
     <meta name="twitter:label1" content="Written by" />
-    <meta name="twitter:data1" content="mocmocmoc" />
+    <meta name="twitter:data1" content="old rectory writers" />
     <meta name="twitter:site" content="@mdoc007" />
     <meta name="twitter:creator" content="@mdoc007" />
     <meta property="og:image:width" content="1400" />
@@ -68,8 +68,8 @@
     "@type": "Website",
     "publisher": {
         "@type": "Organization",
-        "name": "mocmocmoc",
-        "logo": "https://drmarkoconnor.github.io/recwriter/assets/images/blog-icon.png"
+        "name": "old rectory writers",
+        "logo": "https://drmarkoconnor.github.io/recwriter/"
     },
     "url": "https://drmarkoconnor.github.io/recwriter/a-full-and-comprehensive-style-test",
     "image": {
@@ -114,15 +114,21 @@ into the {body} of the default.hbs template -->
     <div class="site-nav-left">
         
             
-                <a class="site-nav-logo" href="https://drmarkoconnor.github.io/recwriter/"><img src="/recwriter/assets/images/blog-icon.png" alt="mocmocmoc" /></a>
+                <a class="site-nav-logo" href="https://drmarkoconnor.github.io/recwriter/">old rectory writers</a>
             
         
         
             <ul class="nav" role="menu">
-    <li class="nav-home" role="menuitem"><a href="/recwriter/">Home</a></li>
-    <li class="nav-about" role="menuitem"><a href="/recwriter/about/">About</a></li>
-    <li class="nav-getting-started" role="menuitem"><a href="/recwriter/tag/getting-started/">Getting Started</a></li>
-    <li class="nav-try-ghost" role="menuitem"><a href="https://ghost.org">Try Ghost</a></li>
+  <li class="nav-home" role="menuitem"><a href="/recwriter/">Home</a></li>
+  <li class="nav-about" role="menuitem">
+    <a href="/recwriter/about/">About</a>
+  </li>
+  <li class="nav-getting-started" role="menuitem">
+    <a href="/recwriter/tag/poetry/">poetry</a>
+  </li>
+  <li class="nav-getting-started" role="menuitem">
+    <a href="/recwriter/tag/fiction/">fiction</a>
+  </li>
 </ul>
 
         
@@ -594,7 +600,7 @@ c.draw = function() {
             <!-- Email subscribe form at the bottom of the page -->
             
                 <section class="subscribe-form">
-                    <h3 class="subscribe-form-title">Subscribe to mocmocmoc</h3>
+                    <h3 class="subscribe-form-title">Subscribe to old rectory writers</h3>
                     <p>Get the latest posts delivered right to your inbox</p>
                     <form method="post" action="/subscribe/" class="">
     <input class="confirm" type="hidden" name="confirm"  /><input class="location" type="hidden" name="location"  /><input class="referrer" type="hidden" name="referrer"  />
@@ -615,39 +621,29 @@ c.draw = function() {
                 
                     
                 
-                    
-                
-                    
-                        <section class="author-card">
-                            
-                                <img class="author-profile-image" src="/recwriter/assets/images/john.jpg" alt="john" />
-                            
-                            <section class="author-card-content">
-                                <h4 class="author-card-name"><a href="/recwriter/author/john">John O'Nolan</a></h4>
-                                
-                                    <p>Founder at Ghost.org. Writes about open source, startup life, non-profits, and publishing platforms. Travels the world with a bag of kites.</p>
-                                
-                            </section>
-                        </section>
-                        <div class="post-full-footer-right">
-                            <a class="author-card-button" href="/recwriter/author/john">Read More</a>
-                        </div>
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
                 <!-- /author  -->
             </footer>
 
             <!-- If you use Disqus comments, just uncomment this block.
             The only thing you need to change is "test-apkdzgmqhj" - which
             should be replaced with your own Disqus site-id. -->
+            
+                <section class="post-full-comments">
+                    <div id="disqus_thread"></div>
+                    <script>
+                        var disqus_config = function () {
+                            this.page.url = 'https://drmarkoconnor.github.io/a-full-and-comprehensive-style-test';
+                            this.page.identifier = '/a-full-and-comprehensive-style-test';
+                            this.page.title = 'A Full and Comprehensive Style Test';
+                        };
+                        (function() {
+                            var d = document, s = d.createElement('script');
+                            s.src = 'https://drmarkoconnor.disqus.com/embed.js';
+                            s.setAttribute('data-timestamp', +new Date());
+                            (d.head || d.body).appendChild(s);
+                        })();
+                    </script>
+                </section>
             
 
         </article>
@@ -694,25 +690,6 @@ c.draw = function() {
                 
                     
                 
-                    
-                        
-                        <img class="author-profile-image" src="/recwriter/assets/images/hannah.jpg" alt="Hannah Wolfe" />
-                        
-                        <span class="post-card-author">
-                            <a href="/recwriter/author/hannah/">Hannah Wolfe</a>
-                        </span>
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
                 <span class="reading-time">
                     
                     
@@ -731,22 +708,26 @@ c.draw = function() {
 
     <article class="post-card post-template">
         
-            <a class="post-card-image-link" href="/recwriter/i-have-a-dream">
-                <div class="post-card-image" style="background-image: url(/recwriter/assets/images/sky.jpg)"></div>
+            <a class="post-card-image-link" href="/recwriter/style-tbx-mar">
+                <div class="post-card-image" style="background-image: url(/recwriter/assets/images/us-45.jpg)"></div>
             </a>
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="/recwriter/i-have-a-dream">
+            <a class="post-card-content-link" href="/recwriter/style-tbx-mar">
                 <header class="post-card-header">
                     
                         
                             
-                                <span class="post-card-tags">Speeches</span>
+                               <span class="post-card-tags">Markdown</span>
+                            
+                        
+                            
+                                <span class="post-card-tags">Post_formatting</span>
                             
                         
                     
 
-                    <h2 class="post-card-title">I Have a Dream</h2>
+                    <h2 class="post-card-title">Styling</h2>
                 </header>
                 <section class="post-card-excerpt">
                     
@@ -757,23 +738,11 @@ c.draw = function() {
             <footer class="post-card-meta">
                 
                     
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-                    
                         
-                        <img class="author-profile-image" src="/recwriter/assets/images/martin.jpg" alt="Martin Luther King" />
+                        <img class="author-profile-image" src="/recwriter/assets/images/moc.jpg" alt="Dr Mark O'Connor" />
                         
                         <span class="post-card-author">
-                            <a href="/recwriter/author/martin/">Martin Luther King</a>
+                            <a href="/recwriter/author/mark/">Dr Mark O'Connor</a>
                         </span>
                     
                 
@@ -798,9 +767,7 @@ c.draw = function() {
     <div class="floating-header-logo">
         <a href="https://drmarkoconnor.github.io/recwriter/">
             
-                <img src="/recwriter/assets/images/favicon.png" alt="mocmocmoc icon" />
-            
-            <span>mocmocmoc</span>
+            <span>old rectory writers</span>
         </a>
     </div>
     <span class="floating-header-divider">&mdash;</span>
@@ -840,7 +807,7 @@ c.draw = function() {
         <!-- The footer at the very bottom of the screen -->
         <footer class="site-footer outer">
             <div class="site-footer-content inner">
-                <section class="copyright"><a href="https://drmarkoconnor.github.io/recwriter/">mocmocmoc</a> &copy; 2021</section>
+                <section class="copyright"><a href="https://drmarkoconnor.github.io/recwriter/">old rectory writers</a> &copy; 2021</section>
                 <section class="poweredby">Proudly published with <a href="https://jekyllrb.com/">Jekyll</a> &
                     <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a> using
                     <a href="https://github.com/jekyller/jasper2" target="_blank" rel="noopener">Jasper2</a></section>
@@ -861,9 +828,7 @@ c.draw = function() {
             <a class="subscribe-overlay-close" href="#"></a>
             <div class="subscribe-overlay-content">
                 
-                    <img class="subscribe-overlay-logo" src="/recwriter/assets/images/blog-icon.png" alt="mocmocmoc" />
-                
-                <h1 class="subscribe-overlay-title">Subscribe to mocmocmoc</h1>
+                <h1 class="subscribe-overlay-title">Subscribe to old rectory writers</h1>
                 <p class="subscribe-overlay-description">Stay up to date! Get all the latest &amp; greatest posts delivered straight to your inbox</p>
                 <form method="post" action="/subscribe/" class="">
     <input class="confirm" type="hidden" name="confirm"  /><input class="location" type="hidden" name="location"  /><input class="referrer" type="hidden" name="referrer"  />

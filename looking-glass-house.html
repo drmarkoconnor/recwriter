@@ -34,13 +34,13 @@
     <![endif]-->
     
     <!-- This tag outputs SEO meta+structured data and other important settings -->
-    <meta name="description" content="The professional publishing platform" />
-    <link rel="shortcut icon" href="https://drmarkoconnor.github.io/recwriter/assets/images/favicon.png" type="image/png" />
+    <meta name="description" content="writing courses in the heart of north somerset - a perfect way to begin your writing journey" />
+    <link rel="shortcut icon" href="https://drmarkoconnor.github.io/recwriter/" type="image/png" />
     <link rel="canonical" href="https://drmarkoconnor.github.io/recwriter/looking-glass-house" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
 
      <!--title below is coming from _includes/dynamic_title-->
-    <meta property="og:site_name" content="mocmocmoc" />
+    <meta property="og:site_name" content="old rectory writers" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Looking-Glass house" />
     <meta property="og:description" content="One thing was certain, that the white kitten had had nothing to do with it:— it was the black kitten’s fault entirely. For the white kitten had been having its face washed by the old cat for the last quarter of an hour (and bearing it pretty well, considering); so" />
@@ -57,7 +57,7 @@
     <meta name="twitter:url" content="https://drmarkoconnor.github.io/recwriter/" />
     <meta name="twitter:image" content="https://drmarkoconnor.github.io/recwriter/assets/images/summit.jpg" />
     <meta name="twitter:label1" content="Written by" />
-    <meta name="twitter:data1" content="mocmocmoc" />
+    <meta name="twitter:data1" content="old rectory writers" />
     <meta name="twitter:label2" content="Filed under" />
     <meta name="twitter:data2" content="Fiction" />
     <meta name="twitter:site" content="@mdoc007" />
@@ -71,8 +71,8 @@
     "@type": "Website",
     "publisher": {
         "@type": "Organization",
-        "name": "mocmocmoc",
-        "logo": "https://drmarkoconnor.github.io/recwriter/assets/images/blog-icon.png"
+        "name": "old rectory writers",
+        "logo": "https://drmarkoconnor.github.io/recwriter/"
     },
     "url": "https://drmarkoconnor.github.io/recwriter/looking-glass-house",
     "image": {
@@ -117,15 +117,21 @@ into the {body} of the default.hbs template -->
     <div class="site-nav-left">
         
             
-                <a class="site-nav-logo" href="https://drmarkoconnor.github.io/recwriter/"><img src="/recwriter/assets/images/blog-icon.png" alt="mocmocmoc" /></a>
+                <a class="site-nav-logo" href="https://drmarkoconnor.github.io/recwriter/">old rectory writers</a>
             
         
         
             <ul class="nav" role="menu">
-    <li class="nav-home" role="menuitem"><a href="/recwriter/">Home</a></li>
-    <li class="nav-about" role="menuitem"><a href="/recwriter/about/">About</a></li>
-    <li class="nav-getting-started" role="menuitem"><a href="/recwriter/tag/getting-started/">Getting Started</a></li>
-    <li class="nav-try-ghost" role="menuitem"><a href="https://ghost.org">Try Ghost</a></li>
+  <li class="nav-home" role="menuitem"><a href="/recwriter/">Home</a></li>
+  <li class="nav-about" role="menuitem">
+    <a href="/recwriter/about/">About</a>
+  </li>
+  <li class="nav-getting-started" role="menuitem">
+    <a href="/recwriter/tag/poetry/">poetry</a>
+  </li>
+  <li class="nav-getting-started" role="menuitem">
+    <a href="/recwriter/tag/fiction/">fiction</a>
+  </li>
 </ul>
 
         
@@ -212,7 +218,7 @@ The poor King looked puzzled and unhappy, and struggled with the pencil for some
             <!-- Email subscribe form at the bottom of the page -->
             
                 <section class="subscribe-form">
-                    <h3 class="subscribe-form-title">Subscribe to mocmocmoc</h3>
+                    <h3 class="subscribe-form-title">Subscribe to old rectory writers</h3>
                     <p>Get the latest posts delivered right to your inbox</p>
                     <form method="post" action="/subscribe/" class="">
     <input class="confirm" type="hidden" name="confirm"  /><input class="location" type="hidden" name="location"  /><input class="referrer" type="hidden" name="referrer"  />
@@ -233,39 +239,29 @@ The poor King looked puzzled and unhappy, and struggled with the pencil for some
                 
                     
                 
-                    
-                
-                    
-                
-                    
-                        <section class="author-card">
-                            
-                                <img class="author-profile-image" src="/recwriter/assets/images/lewis.jpeg" alt="lewis" />
-                            
-                            <section class="author-card-content">
-                                <h4 class="author-card-name"><a href="/recwriter/author/lewis">Lewis Carroll</a></h4>
-                                
-                                    <p>My real name is Charles Lutwidge Dodgson, but people call me Lewis. I'm an English writer, mathematician, logician, Anglican deacon and photographer. People know me best for writing about Alice.</p>
-                                
-                            </section>
-                        </section>
-                        <div class="post-full-footer-right">
-                            <a class="author-card-button" href="/recwriter/author/lewis">Read More</a>
-                        </div>
-                    
-                
-                    
-                
-                    
-                
-                    
-                
                 <!-- /author  -->
             </footer>
 
             <!-- If you use Disqus comments, just uncomment this block.
             The only thing you need to change is "test-apkdzgmqhj" - which
             should be replaced with your own Disqus site-id. -->
+            
+                <section class="post-full-comments">
+                    <div id="disqus_thread"></div>
+                    <script>
+                        var disqus_config = function () {
+                            this.page.url = 'https://drmarkoconnor.github.io/looking-glass-house';
+                            this.page.identifier = '/looking-glass-house';
+                            this.page.title = 'Looking-Glass house';
+                        };
+                        (function() {
+                            var d = document, s = d.createElement('script');
+                            s.src = 'https://drmarkoconnor.disqus.com/embed.js';
+                            s.setAttribute('data-timestamp', +new Date());
+                            (d.head || d.body).appendChild(s);
+                        })();
+                    </script>
+                </section>
             
 
         </article>
@@ -284,11 +280,11 @@ The poor King looked puzzled and unhappy, and struggled with the pencil for some
                 
                     <article class="read-next-card"
                         
-                            style="background-image: url(/recwriter/assets/images/blog-cover.jpg)"
+                            style="background-image: url(/recwriter/assets/images/us-23.jpg)"
                         
                     >
                         <header class="read-next-card-header">
-                            <small class="read-next-card-header-sitetitle">&mdash; mocmocmoc &mdash;</small>
+                            <small class="read-next-card-header-sitetitle">&mdash; old rectory writers &mdash;</small>
                             
                                 <h3 class="read-next-card-header-title"><a href="/recwriter/tag/fiction/">Fiction</a></h3>
                             
@@ -298,6 +294,24 @@ The poor King looked puzzled and unhappy, and struggled with the pencil for some
                         <div class="read-next-card-content">
                             <ul>
                                 
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
                                 
                                   
                                 
@@ -391,25 +405,6 @@ The poor King looked puzzled and unhappy, and struggled with the pencil for some
                 
                     
                 
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                        
-                        <img class="author-profile-image" src="/recwriter/assets/images/edgar.gif" alt="Edgar Rice Burroughs" />
-                        
-                        <span class="post-card-author">
-                            <a href="/recwriter/author/edgar/">Edgar Rice Burroughs</a>
-                        </span>
-                    
-                
-                    
-                
                 <span class="reading-time">
                     
                     
@@ -455,25 +450,6 @@ The poor King looked puzzled and unhappy, and struggled with the pencil for some
                 
                     
                 
-                    
-                
-                    
-                
-                    
-                        
-                        <img class="author-profile-image" src="/recwriter/assets/images/lewis.jpeg" alt="Lewis Carroll" />
-                        
-                        <span class="post-card-author">
-                            <a href="/recwriter/author/lewis/">Lewis Carroll</a>
-                        </span>
-                    
-                
-                    
-                
-                    
-                
-                    
-                
                 <span class="reading-time">
                     
                     
@@ -495,9 +471,7 @@ The poor King looked puzzled and unhappy, and struggled with the pencil for some
     <div class="floating-header-logo">
         <a href="https://drmarkoconnor.github.io/recwriter/">
             
-                <img src="/recwriter/assets/images/favicon.png" alt="mocmocmoc icon" />
-            
-            <span>mocmocmoc</span>
+            <span>old rectory writers</span>
         </a>
     </div>
     <span class="floating-header-divider">&mdash;</span>
@@ -537,7 +511,7 @@ The poor King looked puzzled and unhappy, and struggled with the pencil for some
         <!-- The footer at the very bottom of the screen -->
         <footer class="site-footer outer">
             <div class="site-footer-content inner">
-                <section class="copyright"><a href="https://drmarkoconnor.github.io/recwriter/">mocmocmoc</a> &copy; 2021</section>
+                <section class="copyright"><a href="https://drmarkoconnor.github.io/recwriter/">old rectory writers</a> &copy; 2021</section>
                 <section class="poweredby">Proudly published with <a href="https://jekyllrb.com/">Jekyll</a> &
                     <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a> using
                     <a href="https://github.com/jekyller/jasper2" target="_blank" rel="noopener">Jasper2</a></section>
@@ -558,9 +532,7 @@ The poor King looked puzzled and unhappy, and struggled with the pencil for some
             <a class="subscribe-overlay-close" href="#"></a>
             <div class="subscribe-overlay-content">
                 
-                    <img class="subscribe-overlay-logo" src="/recwriter/assets/images/blog-icon.png" alt="mocmocmoc" />
-                
-                <h1 class="subscribe-overlay-title">Subscribe to mocmocmoc</h1>
+                <h1 class="subscribe-overlay-title">Subscribe to old rectory writers</h1>
                 <p class="subscribe-overlay-description">Stay up to date! Get all the latest &amp; greatest posts delivered straight to your inbox</p>
                 <form method="post" action="/subscribe/" class="">
     <input class="confirm" type="hidden" name="confirm"  /><input class="location" type="hidden" name="location"  /><input class="referrer" type="hidden" name="referrer"  />
