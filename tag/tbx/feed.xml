@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="https://drmarkoconnor.github.io/recwriter/tag/tbx/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://drmarkoconnor.github.io/recwriter/" rel="alternate" type="text/html" />
-  <updated>2021-01-16T22:23:03+00:00</updated>
+  <updated>2021-01-24T22:50:57+00:00</updated>
   <id>https://drmarkoconnor.github.io/recwriter/tag/tbx/feed.xml</id>
 
   
@@ -32,22 +32,293 @@
 
   
     <entry>
-      <title type="html">There can be a much longer title set in the MyTitle KA</title>
-      <link href="https://drmarkoconnor.github.io/recwriter/Christmas" rel="alternate" type="text/html" title="There can be a much longer title set in the MyTitle KA" />
+      <title type="html">Responsive layout tips</title>
+      <link href="https://drmarkoconnor.github.io/recwriter/tags" rel="alternate" type="text/html" title="Responsive layout tips" />
       <published>2020-12-25T20:11:50+00:00</published>
       <updated>2020-12-25T20:11:50+00:00</updated>
       <id>https://drmarkoconnor.github.io/recwriter/Christmas</id>
-      <content type="html" xml:base="https://drmarkoconnor.github.io/recwriter/Christmas">&lt;h1&gt;Heading one - typing this directly in Tinderbox&lt;/h1&gt;
+      <content type="html" xml:base="https://drmarkoconnor.github.io/recwriter/tags">&lt;h1&gt;Responsive layouts from Kevin Powell videos&lt;/h1&gt;
 
-&lt;h2&gt;Heading two - I have terminal open and running &lt;code&gt;bundle exec jekyll serve --livereload&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;
+  Don’t use ems for font sizes as children will inherit and can act as a
+  compounding multiplier - use rems
+&lt;/p&gt;
+
+&lt;p&gt;
+  paddings and margins etc&amp;#8230; ems in this instance reference the font size
+  of the element it is in ( not the parents ) For font sizes best to use rems
+  and leave paddiings and margins in ems
+&lt;/p&gt;
+
+&lt;p&gt;use max-width to fix the width on a larger screen&lt;/p&gt;
+
+&lt;p&gt;use * the universal selector at the start of css files&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt; * { box-sizing: border-box; }&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;
+  for a hero splash page use 100vh setting title fonts to vw units means they
+  grow with the page
+&lt;/p&gt;
+
+&lt;p&gt;
+  However don’t do this for normal type as gets too small and at bigger screens
+  sizes spoils the layout
+&lt;/p&gt;
+
+&lt;h3&gt;copying an existing design&lt;/h3&gt;
+
+&lt;p&gt;This is good practice to try and replicate a layout.&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;Visual Studio code shows files in folders based on git branch that is checked out&lt;/li&gt;
+  &lt;li&gt;
+    Start with reproducing the text of the layout so that each natural grouping
+    lies on top of each other
+  &lt;/li&gt;
+  &lt;li&gt;
+    Mark up with &amp;lt;div class=“semantic-name”&amp;gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        container, hero, container-title, contaner-main-content etc&amp;#8230;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Set all elements to have &lt;code&gt;box-sizing: border-box;&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Set relative units for width ( % vw etc&amp;#8230; )&lt;/li&gt;
+  &lt;li&gt;Don’t set a height&lt;/li&gt;
+  &lt;li&gt;
+    set margins left and right to &lt;code&gt;0 auto&lt;/code&gt; for centered ‘hero’ splash
+    segment
+  &lt;/li&gt;
+  &lt;li&gt;
+    Use &lt;code&gt;border-radius:%;&lt;/code&gt; to generate lozenges to circles for
+    buttons
+  &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;quote : I would like to find out if finder does this in some fashion as it is very cool&lt;/p&gt;
-&lt;/blockquote&gt;</content>
+&lt;p&gt;
+  The following code was the challenge 3 in Kevin Powell’s 21 day challenge
+  which worked well ( although not perfect with respect to the red circular
+  numbers positioning
+&lt;/p&gt;
+&lt;pre
+  style=&quot;
+    white-space: pre-wrap;
+    height: 90vh;
+    background-color: white;
+    color: black;
+    font-size: 1.3em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+      sans-serif;
+    width: 100%;
+    border-radius: 5%;
+    border: none;
+  &quot;
+&gt;
+
+
+
+
+
+
+
+
+
+Speaking of Lorna
+A short story
+
+
+
+
+Lorna Sullivan hadn’t spoken for ten years. Her younger sister, Una, thought she was born like it. But that wasn’t true. There had been an older sister. Dead now. Died when Lorna was seven, on the night Lorna stopped speaking.
+	Lorna’s Dad, Declan, bellowed from the foot of the stairs.
+	‘Una…Una.’ A small statue of Christ wobbled on the hallway table.
+	‘Lorna is your sister up there or no? …Come down now, Father McClatchey is here for a visit.’ 
+	Una had been playing in Lorna’s room all morning, laying out her Chinese dolls, dressing them up and trying on a variety of Lorna’s clothes herself too. Lorna threw her dressing gown at Una, and motioned Una to dress. She helped Una with the belt, and tied a double knot . Secure. Good. She went down the stairs behind Una, with both hands on Una’s shoulders, and directed her past Father McClatchey, to the far side of kitchen table. Their mother, Aileen, set down a plate of thick bacon rashers, mushrooms and black pudding, next to a large pot of Assam tea. 
+	‘Lorna, where’s your manners now?’ said Aileen. ‘Will you take the Father’s coat now.’ 
+	Lorna, avoiding the priest’s gaze, took his frock coat and left the kitchen to hang it on the bannister. As she folded the black fabric over her arm, her stomach tightened. A pervasive smell of must hit her nostrils and she recoiled at the thick flakes of dandruff on its blackened collar. Returning to the kitchen, she saw Father McClatchey had moved to sit next to Una, his arm around her shoulder. 
+	‘She’s a good girl Declan, so she is,’ said the Father as he lifted Una onto his lap, ‘knows all her prayers for her big day.’
+	Una smiled and recited the Lord’s Prayer and the Hail Mary on request. The Father kissed her on the top of her head with every correct recitation. Aileen and Declan joined in the praise. Lorna moved to the mantelpiece and picked up a photograph of her dead sister and gently placed a kiss onto its surface.
+	‘Be careful with that now, Lorna,’ said Declan as he replaced the frame onto the mantelpiece. ‘There we go now,’ patting Lorna on the head before continuing, ‘she’s living in grace without end, and in our hearts, so she is.’
+	‘Beautiful Declan,’ said Father McClatchey, placing a kiss onto Una’s cheek, ‘dry your tears now, Aileen.’
+	Lorna felt a warmth rise into her chest and noticed her rapid breathing. Her hands had a fine tremble and she braced herself against the kitchen table and took a sip of tea.
+	’D’ya see Aileen?’ said the Father, biting into a slice of malted toast almost simultaneously as he slurped his tea, ‘Una will be grand on the day so she will.’ 
+	Aileen topped up Father McClatchey’s mug. 
+	‘She has some trouble with the Glory be Father,’ said Aileen, dropping more bacon onto his plate, ‘the order of the words like.’
+	Father McClatchey tried to pick out some bacon fat caught between his top teeth, creating in the process a snarling appearance.
+	’Tis easy enough with some practice now, Aileen, and I’ll take her into the Transept after her reading on Sunday and we’ll get it right so we will.’
+	Lorna dropped her mug of tea, which broke into fragments on the cold stone floor. 
+	‘Well there’s no putting that together when its that broke,’ said Declan.
+	Una jumped down from the Father’s lap and moved over to Lorna to see the damage.
+	Father McClatchey left the kitchen and returned with his coat, whilst Aileen helped Lorna clean up. 
+	‘I’ll see you for a private lesson on Sunday, Una, and just remember the order of the words is very logical now so it is,’ said the Father as he doffed his cap to Aileen and Declan , ‘beginning… now… and ever shall be.’ 
+	Lorna thought about the Glory Be as she returned to her bedroom. Una took off the heavy dressing gown and Lorna looked at her naked sister reciting the Glory be into the mirror.  ‘Glory be to the Father, and to the Son, and to the Holy Spirit, as it was in the beginning, is now, and ever shall be, world without end. Amen.’
+	Lorna smiled at Una.
+	‘I did it Lorna,’ said Una, as she spun round and jumped into Lorna’s lap.
+	Lorna hugged her innocence and stroked her unsullied flesh. World without end thought Lorna, as she pulled the soft duvet around Una’s shoulders. She knew she had to stop Una having the lesson. She knew this had to end on Sunday. Pressing herself closer to Una she placed her lips softly onto Una’s ear and whispered, ‘Can you keep a secret?’
+
+Lorna stood and released her mother’s clammy hand. Gentle applause and soft murmurs of support from the congregation stirred the air as she took her first tentative steps towards the pulpit. The clapping grew and echoed around the vaults of the 12th century church of Ballytabrae, County Cork. Una could never keep secrets, and Lorna wondered how quiet it would be after she had finished, how shocked and disgusted the smiling faces might be then. Perhaps. Lorna passed an old man sitting on the edge of the last pew who reached out and stroked her arm. She stopped and looked down at him and flinched her arm away, regretting it immediately. She let a small smile develop in compensation.
+	‘You are a beautiful girl, Lorna Sullivan, like your mother so you are, and don’t you forget it now. God bless you me darling,’ said the old man.
+	An occasional baby’s cry added to the tension, and frosty stares from the childless beamed to guilty looking parents as they tried to keep order over their broods. Lorna’s parents sat in the back row and tightened their grip of each other’s hands, as they peered through a sea of heads in front of them to watch their daughter ascend to the pulpit. They hadn’t believed Una, but Lorna had heard them praying every night before bed for it to be true.
+	Lorna reached the pulpit and stumbled on its first stone step, dropping her notes over the cold granite floor. Silence. Her trembling hands scooped the scrawled notes into an uneven bundle. She rearranged them at the lectern in full view of the congregation. Lorna’s reddened face attempted a smile as she glanced around. She pushed her tongue over her top teeth and around her dry mouth searching for moisture. Lorna thought the bulges in her cheeks, as her tongue continued its exploration, must have looked comical to the giggling front row children.
+	‘Be quiet now,’ said Father McClatchey, glaring at them.
+	‘Father McClatchey, suffer unto me the little children?’ said Lorna.
+‘Jaysus, Mary mother of god,’ said the Priest, who dropped to his knees in front of the stone altar, raising his arms towards the effigy of Christ hanging above Lorna's head. 
+	The arched black door to the East transept blew open sending in a cold blast of winter air. The door led into the priest's changing area and Lorna could see directly into the room. There were cassocks hanging from dark oak beams and chains draped like a hangman's noose, ready for the censer, cooking its sweet smoking incense. A storm brewing outside sounded a distant thunder crack.  The children stopped their laughter. One small girl started crying and snuggled close to her mother. Aileen collapsed across Declan’s lap.
+	‘Jaysus, Jaysus, she’s speaking, Christ she’s speaking,’ said Declan.
+	Lorna looked at her father across the sea of faces mouthing Hail Marys, and wished she could wipe his tears away. She longed to hold and kiss her mother. Too late. She wasn't a child anymore. She knew her first words would hurt. She knew there were more tears to come.
+	Father McClatchey rose and turned to the congregation.
+	‘Praise the lord, our prayers have been answered,’ he said. Ashen faced, bowed head,  he moved over to Lorna. Behind her, close in tight behind her. He placed his arm on her right shoulder and slipped his other hand down her low back, unseen, and caressed her left buttock. He leaned in closer and whispered, ‘God be with you child. Be a good girl now, and think of your Mammy and Pappy.’
+	Unseen by the crowd, Lorna reached behind and dug her nails into the back of his hand.
+	Father McClatchey cradled his hand one in the other and in feigned prayer stepped back. He looked at the congregation and then to the notes Lorna had placed onto the lectern. There were pictures of crosses, faces, unhappy looking faces, drawn all over the front page of her diary. The diary she started the night her sister had died. The night she had been cared for, by Father McClatchey, as her parents grieved at the hospital.
+	Someone fastened the East door, but new air had cooled the room and the atmosphere changed. Lorna clutched her notes and raised them high above her head.
+	‘I am Lorna Sullivan, I am seventeen, and I have something important to tell yous all.’
+	‘Lord, we thank you for bringing our daughter back to us. Let us rise and sing hymn 346  - Into the hands of our redeemer,’ said Father McClatchey.
+	Lorna saw her Daddy’s hand in the air, as if trying to signal Father McClatchey. She turned to the organist and wagged her finger. ‘Father McClatchey, are you ashamed to look my daddy in the eyes now?’ she said, keeping her voice low.
+	‘Yes Declan, what is it?’ said Father McClatchey.
+	‘Please, Father, she hasn't spoken for ten years, it's a miracle, let her speak, it must be god's will.’
+	‘To be sure Declan, but it’s an awful ordeal for her I'll wager. I’ll take her for a private talk and prayer - it'll be for the best now.’ Father McClatchey beckoned Lorna into the East transept.
+	Lorna noticed dark blue veins bulge in his neck. She smelt the sweat dripping from his brow.
+	He moved close to her once more. He could taste the red communion Cabernet on his breath as it wafted across her face. She knew these sensations well. She remembered. The hand that slipped between her legs, and stole her voice.
+	‘Let her speak now Father, please,’ said Declan who had joined Lorna at the pulpit.
+	Aileen sat slumped in the pew, her shoulders rocking with the quiet effort of crying.
+	Father McClatchey walked away towards the East door and sat on the edge of the altar steps. 
+	'Father McClatchey… over there … he …’ Lorna’s lips stuck together. She gripped the lectern to maintain her balance.
+	Father McClatchey stood, and Lorna saw him tremble at the sound of his name on her lips. 
+	‘Lorna please be careful with your words now, please,’ said Father McClatchey.
+	‘I’m sorry Father, they have a right to know.’
+	‘Jaysus, Holy Mary Mother of God, pray for me a sinner now and at the hour of my death.' Father McClatchey continued to mutter the incantation under his breath repeatedly and withdrew through the East transept door.
+	‘What's going on here Lorna,’ said Declan, joining Lorna at the lectern, ‘what is it you have to tell us?’
+	‘Sorry, Daddy.’ Lorna gripped the sides of the lectern and her knuckles whitened as she summoned up the courage for the final hurdle. ‘I can't live this lie. Daddy, I'm sorry.’
+	Lorna looked over to the East door. The latch, loosened by a gust from the storm outside caused the door to swing a little. Lorna heard a creaking noise from within and from her position at the lectern snatched a glimpse within as the door drifted open further. Father McClatchey standing on a bench appeared to Lorna to be removing his cassock over his head. She imagined the thick censer’s smoke billowing around him rising from Hell itself. The door swung shut but Lorna felt sure that he would hear her final words. A thunder crack broke over the steeple. 
+	‘I , I …’ Lorna stuttered and her tears fell onto her notes, onto a felt tip scrawl of a childlike cross. She looked up at the effigy above her and rubbed the tears into an inky smudge. She screwed up the page and threw it at the Christ. ‘I don't believe in him, any of it, any of it.’ She slumped into Declan's chest and gulped the air to feed her sobbing. ‘I can’t, I just can’t.’
+	'Jaysus, Lorna, you don't believe in God? Is that what’s got your tongue? Do ya think me and your mammy care? Come here ya daft ha'porth.’
+	The old man at the end of the last pew approached and Lorna remembered how she had flinched at his touch earlier.
+	‘Welcome back, God bless you,’ he said, placing a kiss onto her arm. Unflinching, Lorna wrapped herself around her daddy’s chest and decided she would stay there forever.
+	Lorna, Una, and her parents waited on the altar to receive many more well wishes from the congregation as folk filed out into the crisp morning air. The storm had long blown over.
+	‘I’ve ruined the Mass,’ said Lorna looking up at Declan.
+	Declan cradled Lorna’s head and landed dozens of kisses on it.
+	’Not at all poppet, Father will forgive you for sure.’ Declan guided all his girls towards the North door, ‘Jaysus, I’m looking forward to a good old chat now so I am.’
+	Forgive me? thought Lorna. She looked across to the East transept door, now fully open, to reveal Father McClatchey, swinging, at peace, the censer’s smoke billowing beneath his dangling feet. Lorna looked up at her Daddy. She would say nothing. She was good at that.
+&lt;/pre&gt;
+&lt;p&gt;```&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;head&amp;gt;
+  &amp;lt;style&amp;gt;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&amp;amp;display=swap');
+&amp;lt;/style&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+  &amp;lt;div class=&amp;quot;hero&amp;quot;&amp;gt;
+    &amp;lt;div class=&amp;quot;hero-title&amp;quot;&amp;gt;Responsive layouts don't have to be a struggle  &amp;lt;div class=&amp;quot;button-round-red&amp;quot;&amp;gt;1&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+   
+    &amp;lt;div class=&amp;quot;hero-content&amp;quot;&amp;gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.&amp;lt;div class=&amp;quot;button-round-red&amp;quot;&amp;gt;2&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+    
+    &amp;lt;div class=&amp;quot;button-lozenge&amp;quot;&amp;gt;I WANT TO LEARN&amp;lt;/div&amp;gt;&amp;lt;div class=&amp;quot;button-round-red&amp;quot;&amp;gt;3&amp;lt;/div&amp;gt;
+     
+      
+  &amp;lt;/div&amp;gt;
+  
+&amp;lt;/body&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;```&lt;/p&gt;
+
+&lt;p&gt;```&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;*{
+  box-sizing:border-box;
+}
+
+.hero{
+  background-color:#23424A;
+    color:white;
+ 
+   padding:100px;
+}
+.hero-title{
+  font-size:48px;
+  font-family: 'Roboto', sans-serif;
+  width:72%;
+    font-weight:bold;
+}
+.hero-content{
+  width:72%;
+  padding:1rem 0;
+  color:lightgrey;
+  font-family: 'Roboto', sans-serif;
+  font-size:21px;
+}
+.button-lozenge{
+  background-color:#38CFD9;
+    text-align:center;
+  padding:1rem;
+  width:30%;
+  margin:2rem 1rem;
+  color:black;
+  font-weight:bold;
+  font-family: 'Roboto', sans-serif;
+  border-radius:25px;
+  display:inline-block;
+  
+  
+}
+.button-round-red{
+  font-weight:bold;
+  font-size:35px;
+  background-color:red;
+  display:inline-block;
+  width:1.5em;
+  height:1.5em;
+  border-radius:50%;
+  text-align:center;
+  margin: 0 0 0 1rem
+  
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;```&lt;/p&gt;
+
+&lt;h3&gt;
+  This is useful code for making the first letter in the first word of a
+  paragraph massive
+&lt;/h3&gt;
+
+&lt;p&gt;```&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;span {
+  float: left;
+  width: 0.7em;
+  font-size: 400%;
+  font-family: algerian, courier;
+  line-height: 80%;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;highlighting&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Use &amp;lt;mark&amp;gt; to highlight &lt;mark&gt;a piece of text&lt;/mark&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;escaping specual characters&lt;/h3&gt;
+
+&lt;p&gt;Use a backslash (\) before tags to render them literally;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&amp;lt;b&amp;gt;bold&amp;lt;/b&amp;gt;&lt;/li&gt;
+  &lt;li&gt;instead of just &lt;b&gt;bold&lt;/b&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;strikethrough&lt;/h3&gt;
+
+&lt;p&gt;strikethrough is accomplished with &amp;lt;strike&amp;gt; tag, e.g;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&amp;lt;strike&amp;gt;This is full strike&amp;lt;/strike&amp;gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strike&gt;This is full strike&lt;/strike&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
 
       
       
@@ -72,7 +343,7 @@
       
 
       
-        <summary type="html">Heading one - typing this directly in Tinderbox</summary>
+        <summary type="html">Responsive layouts from Kevin Powell videos</summary>
       
 
       

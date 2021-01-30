@@ -187,10 +187,8 @@ into the {body} of the default.hbs template -->
 
 <h2>1. Fast-forward merge</h2>
 
-<p>
-  This can only be done if there are no other commits to the base branch since
-  the branching took place It is the deafult method that git adopts
-</p>
+<p>This can only be done if there are no other commits to the base branch since the branching took place
+It is the deafult method that git adopts</p>
 
 <p><code>git checkout master</code></p>
 
@@ -205,12 +203,10 @@ into the {body} of the default.hbs template -->
 <p><code>git merge featureX</code></p>
 
 <blockquote>
-  <p>
-    there will be a message here to accept or not the merge B - a no
-    fast-forward merge means that a merge commit will always be created if you
-    want to force a merge commit use the following
-    <code>git merge --no-ff featureX</code>
-  </p>
+  <p>there will be a message here to accept or not the merge
+B - a no fast-forward merge means that a merge commit will always be created
+if you want to force a merge commit use the following
+<code>git merge --no-ff featureX</code></p>
 </blockquote>
 
 <p><code>git branch -d featureX</code></p>
@@ -218,55 +214,41 @@ into the {body} of the default.hbs template -->
 <h2>3. Squash merge</h2>
 
 <ol>
-  <li><code>git checkout master</code></li>
-  <li><code>git merge --squash featureX</code></li>
-  <li><code>git commit</code> a)accept or modify the squash message</li>
-  <li><code>git branch -D featureX</code></li>
+<li><code>git checkout master</code></li>
+<li><code>git merge --squash featureX</code></li>
+<li><code>git commit</code>
+a)accept or modify the squash message</li>
+<li><code>git branch -D featureX</code></li>
 </ol>
 
 <h2>4. Rebase</h2>
 
-<p>
-  see
-  <a href="drafts5://open?uuid=E350B40F-DBFF-40DC-8C89-DC5A1D899195"
-    >this file</a
-  >
-</p>
+<p>see <a href="drafts5://open?uuid=E350B40F-DBFF-40DC-8C89-DC5A1D899195">this file</a></p>
 
 <h1>Resolving merge conflicts</h1>
 
-<p>
-  Essentially any files with conflicts are placed into the working tree after
-  being modified by git - a decision has to involve judgment and the files with
-  modified content are marked up by git with >>>> and &lt;&lt;&lt;&lt; and can
-  be edited, saved, added and them committed.
-</p>
+<p>Essentially any files with conflicts are placed into the working tree after being modified by git - a decision has to involve judgment and the files with modified content are marked up by git with >>>> and &lt;&lt;&lt;&lt; and can be edited, saved, added and them committed.</p>
 
-<p>
-  Again use <code>git log --oneline --graph --all</code> to see the results and
-  check all is good
-</p>
+<p>Again use <code>git log --oneline --graph --all</code> to see the results and check all is good</p>
 
 <ol>
-  <li>checkout master</li>
-  <li>
-    merge featureX
-    <ul>
-      <li>a. CONFLICT - both modified fileA.txt</li>
-    </ul>
-  </li>
-  <li>fix fileA.txt</li>
-  <li>stage fileA.txt</li>
-  <li>commit the merge commit</li>
-  <li>delete the featureX branch label</li>
+<li>checkout master</li>
+<li>merge featureX
+<ul>
+<li>a. CONFLICT - both modified fileA.txt</li>
+</ul></li>
+<li>fix fileA.txt</li>
+<li>stage fileA.txt</li>
+<li>commit the merge commit</li>
+<li>delete the featureX branch label</li>
 </ol>
 
 <h2>resolving a merge conflict involves 3 commits</h2>
 
 <ol>
-  <li>the tip of the current branch ( 'ours' or 'mine')</li>
-  <li>the tip of the branch to be merged ('theirs')</li>
-  <li>a common ancestor ( 'merge base')</li>
+<li>the tip of the current branch ( 'ours' or 'mine')</li>
+<li>the tip of the branch to be merged ('theirs')</li>
+<li>a common ancestor ( 'merge base')</li>
 </ol>
 
 <h1>Aborting a merge attempt</h1>
@@ -332,7 +314,7 @@ into the {body} of the default.hbs template -->
                         };
                         (function() {
                             var d = document, s = d.createElement('script');
-                            s.src = 'https://drmarkoconnor.disqus.com/embed.js';
+                            s.src = 'https://https-drmarkoconnor-github-io.disqus.com/embed.js';
                             s.setAttribute('data-timestamp', +new Date());
                             (d.head || d.body).appendChild(s);
                         })();
@@ -375,7 +357,7 @@ into the {body} of the default.hbs template -->
                                     
                                         
                                         
-                                            <li><a href="/recwriter/Christmas">There can be a much longer title set in the MyTitle KA</a></li>
+                                            <li><a href="/recwriter/tags">Responsive layout tips</a></li>
                                         
                                     
                                   
@@ -440,8 +422,6 @@ into the {body} of the default.hbs template -->
                                 
                                   
                                 
-                                  
-                                
                             </ul>
                         </div>
                         <footer class="read-next-card-footer">
@@ -459,14 +439,14 @@ into the {body} of the default.hbs template -->
             
                 
 
-    <article class="post-card post=template">
+    <article class="post-card post-template">
         
-            <a class="post-card-image-link" href="/recwriter/Christmas">
-                <div class="post-card-image" style="background-image: url(/recwriter/assets/images/us-37.jpg)"></div>
+            <a class="post-card-image-link" href="/recwriter/tags">
+                <div class="post-card-image" style="background-image: url(/recwriter/assets/images/us-2low.jpg)"></div>
             </a>
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="/recwriter/Christmas">
+            <a class="post-card-content-link" href="/recwriter/tags">
                 <header class="post-card-header">
                     
                         
@@ -484,7 +464,7 @@ into the {body} of the default.hbs template -->
                         
                     
 
-                    <h2 class="post-card-title">There can be a much longer title set in the MyTitle KA</h2>
+                    <h2 class="post-card-title">Responsive layout tips</h2>
                 </header>
                 <section class="post-card-excerpt">
                     

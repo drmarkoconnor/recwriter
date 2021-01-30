@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Document Settings -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Base Meta -->
+    <!-- dynamically fixing the title for tag/author pages -->
+
+
+
+    <title>Responsive layout tips</title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Styles'n'Scripts -->
+    <link rel="stylesheet" type="text/css" href="/recwriter/assets/built/screen.css" />
+    <link rel="stylesheet" type="text/css" href="/recwriter/assets/built/screen.edited.css" />
+    <link rel="stylesheet" type="text/css" href="/recwriter/assets/built/syntax.css" />
+    <!-- highlight.js -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <style>.hljs { background: none; }</style>
+
+    <!--[if IE]>
+        <style>
+            p, ol, ul{
+                width: 100%;
+            }
+            blockquote{
+                width: 100%;
+            }
+        </style>
+    <![endif]-->
+    
+    <!-- This tag outputs SEO meta+structured data and other important settings -->
+    <meta name="description" content="writing courses in the heart of north somerset - a perfect way to begin your writing journey" />
+    <link rel="shortcut icon" href="https://drmarkoconnor.github.io/recwriter/" type="image/png" />
+    <link rel="canonical" href="https://drmarkoconnor.github.io/recwriter/tags" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+
+     <!--title below is coming from _includes/dynamic_title-->
+    <meta property="og:site_name" content="old rectory writers" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Responsive layout tips" />
+    <meta property="og:description" content="Responsive layouts from Kevin Powell videos Don’t use ems for font sizes as children will inherit and can act as a compounding multiplier - use rems paddings and margins etc&#8230; ems in this instance reference the font size of the element it is in ( not the parents ) For" />
+    <meta property="og:url" content="https://drmarkoconnor.github.io/recwriter/tags" />
+    <meta property="og:image" content="https://drmarkoconnor.github.io/recwriter/assets/images/us-2low.jpg" />
+    <meta property="article:publisher" content="https://www.facebook.com/" />
+    <meta property="article:author" content="https://www.facebook.com/" />
+    <meta property="article:published_time" content="2020-12-25T20:11:50+00:00" />
+    <meta property="article:modified_time" content="2020-12-25T20:11:50+00:00" />
+    <meta property="article:tag" content="Git" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Responsive layout tips" />
+    <meta name="twitter:description" content="Responsive layouts from Kevin Powell videos Don’t use ems for font sizes as children will inherit and can act as a compounding multiplier - use rems paddings and margins etc&#8230; ems in this instance reference the font size of the element it is in ( not the parents ) For" />
+    <meta name="twitter:url" content="https://drmarkoconnor.github.io/recwriter/" />
+    <meta name="twitter:image" content="https://drmarkoconnor.github.io/recwriter/assets/images/us-2low.jpg" />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="old rectory writers" />
+    <meta name="twitter:label2" content="Filed under" />
+    <meta name="twitter:data2" content="Git" />
+    <meta name="twitter:site" content="@mdoc007" />
+    <meta name="twitter:creator" content="@mdoc007" />
+    <meta property="og:image:width" content="1400" />
+    <meta property="og:image:height" content="933" />
+
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Website",
+    "publisher": {
+        "@type": "Organization",
+        "name": "old rectory writers",
+        "logo": "https://drmarkoconnor.github.io/recwriter/"
+    },
+    "url": "https://drmarkoconnor.github.io/recwriter/tags",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://drmarkoconnor.github.io/recwriter/assets/images/us-2low.jpg",
+        "width": 2000,
+        "height": 666
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://drmarkoconnor.github.io/recwriter/tags"
+    },
+    "description": "Responsive layouts from Kevin Powell videos Don’t use ems for font sizes as children will inherit and can act as a compounding multiplier - use rems paddings and margins etc&#8230; ems in this instance reference the font size of the element it is in ( not the parents ) For"
+}
+    </script>
+
+    <!-- <script type="text/javascript" src="https://demo.ghost.io/public/ghost-sdk.min.js?v=724281a32e"></script>
+    <script type="text/javascript">
+    ghost.init({
+    	clientId: "ghost-frontend",
+    	clientSecret: "f84a07a72b17"
+    });
+    </script> -->
+
+    <meta name="generator" content="Jekyll 3.6.2" />
+    <link rel="alternate" type="application/rss+xml" title="Responsive layout tips" href="/recwriter/feed.xml" />
+
+
+</head>
+<body class="post-template">
+
+    <div class="site-wrapper">
+        <!-- All the main content gets inserted here, index.hbs, post.hbs, etc -->
+        <!-- default -->
+
+<!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template -->
+
+<header class="site-header outer">
+    <div class="inner">
+        <nav class="site-nav">
+    <div class="site-nav-left">
+        
+            
+                <a class="site-nav-logo" href="https://drmarkoconnor.github.io/recwriter/">old rectory writers</a>
+            
+        
+        
+            <ul class="nav" role="menu">
+  <li class="nav-home" role="menuitem"><a href="/recwriter/">Home</a></li>
+  <li class="nav-about" role="menuitem">
+    <a href="/recwriter/about/">About</a>
+  </li>
+  <li class="nav-getting-started" role="menuitem">
+    <a href="/recwriter/tag/poetry/">poetry</a>
+  </li>
+  <li class="nav-getting-started" role="menuitem">
+    <a href="/recwriter/tag/fiction/">fiction</a>
+  </li>
+</ul>
+
+        
+    </div>
+    <div class="site-nav-right">
+        <div class="social-links">
+            
+            
+                <a class="social-link social-link-tw" href="https://twitter.com/mdoc007" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
+</a>
+            
+        </div>
+        
+            <a class="subscribe-button" href="#subscribe">Subscribe</a>
+        
+    </div>
+</nav>
+
+    </div>
+</header>
+
+<!-- Everything inside the #post tags pulls data from the post -->
+<!-- #post -->
+
+<main id="site-main" class="site-main outer" role="main">
+    <div class="inner">
+
+        <article class="post-full  tag-git tag-tbx tag-tinderbox post ">
+
+            <header class="post-full-header">
+                <section class="post-full-meta">
+                    <time class="post-full-meta-date" datetime="25 December 2020">25 December 2020</time>
+                    
+                        <span class="date-divider">/</span>
+                        
+                            
+                               <a href='/recwriter/tag/git/'>GIT</a>,
+                            
+                        
+                            
+                               <a href='/recwriter/tag/tbx/'>TBX</a>,
+                            
+                        
+                            
+                               <a href='/recwriter/tag/tinderbox/'>TINDERBOX</a>
+                            
+                        
+                    
+                </section>
+                <h1 class="post-full-title">Responsive layout tips</h1>
+            </header>
+
+            
+            <figure class="post-full-image" style="background-image: url(/recwriter/assets/images/us-2low.jpg)">
+            </figure>
+            
+
+            <section class="post-full-content">
+                <div class="kg-card-markdown">
+                    <h1>Responsive layouts from Kevin Powell videos</h1>
+
+<p>
+  Don’t use ems for font sizes as children will inherit and can act as a
+  compounding multiplier - use rems
+</p>
+
+<p>
+  paddings and margins etc&#8230; ems in this instance reference the font size
+  of the element it is in ( not the parents ) For font sizes best to use rems
+  and leave paddiings and margins in ems
+</p>
+
+<p>use max-width to fix the width on a larger screen</p>
+
+<p>use * the universal selector at the start of css files</p>
+
+<p><code> * { box-sizing: border-box; }</code></p>
+
+<p>
+  for a hero splash page use 100vh setting title fonts to vw units means they
+  grow with the page
+</p>
+
+<p>
+  However don’t do this for normal type as gets too small and at bigger screens
+  sizes spoils the layout
+</p>
+
+<h3>copying an existing design</h3>
+
+<p>This is good practice to try and replicate a layout.</p>
+
+<ol>
+  <li>
+    Start with reproducing the text of the layout so that each natural grouping
+    lies on top of each other
+  </li>
+  <li>
+    Mark up with &lt;div class=“semantic-name”&gt;
+
+    <ul>
+      <li>
+        container, hero, container-title, contaner-main-content etc&#8230;
+      </li>
+    </ul>
+  </li>
+  <li>Set all elements to have <code>box-sizing: border-box;</code></li>
+  <li>Set relative units for width ( % vw etc&#8230; )</li>
+  <li>Don’t set a height</li>
+  <li>
+    set margins left and right to <code>0 auto</code> for centered ‘hero’ splash
+    segment
+  </li>
+  <li>
+    Use <code>border-radius:%;</code> to generate lozenges to circles for
+    buttons
+  </li>
+</ol>
+
+<p>
+  The following code was the challenge 3 in Kevin Powell’s 21 day challenge
+  which worked well ( although not perfect with respect to the red circular
+  numbers positioning
+</p>
+<pre
+  style="
+    white-space: pre-wrap;
+    height: 90vh;
+    background-color: white;
+    color: black;
+    font-size: 1.3em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+      sans-serif;
+    width: 100%;
+    border-radius: 5%;
+    border: none;
+  "
+>
+
+
+
+
+
+
+
+
+
+Speaking of Lorna
+A short story
+
+
+
+
+Lorna Sullivan hadn’t spoken for ten years. Her younger sister, Una, thought she was born like it. But that wasn’t true. There had been an older sister. Dead now. Died when Lorna was seven, on the night Lorna stopped speaking.
+	Lorna’s Dad, Declan, bellowed from the foot of the stairs.
+	‘Una…Una.’ A small statue of Christ wobbled on the hallway table.
+	‘Lorna is your sister up there or no? …Come down now, Father McClatchey is here for a visit.’ 
+	Una had been playing in Lorna’s room all morning, laying out her Chinese dolls, dressing them up and trying on a variety of Lorna’s clothes herself too. Lorna threw her dressing gown at Una, and motioned Una to dress. She helped Una with the belt, and tied a double knot . Secure. Good. She went down the stairs behind Una, with both hands on Una’s shoulders, and directed her past Father McClatchey, to the far side of kitchen table. Their mother, Aileen, set down a plate of thick bacon rashers, mushrooms and black pudding, next to a large pot of Assam tea. 
+	‘Lorna, where’s your manners now?’ said Aileen. ‘Will you take the Father’s coat now.’ 
+	Lorna, avoiding the priest’s gaze, took his frock coat and left the kitchen to hang it on the bannister. As she folded the black fabric over her arm, her stomach tightened. A pervasive smell of must hit her nostrils and she recoiled at the thick flakes of dandruff on its blackened collar. Returning to the kitchen, she saw Father McClatchey had moved to sit next to Una, his arm around her shoulder. 
+	‘She’s a good girl Declan, so she is,’ said the Father as he lifted Una onto his lap, ‘knows all her prayers for her big day.’
+	Una smiled and recited the Lord’s Prayer and the Hail Mary on request. The Father kissed her on the top of her head with every correct recitation. Aileen and Declan joined in the praise. Lorna moved to the mantelpiece and picked up a photograph of her dead sister and gently placed a kiss onto its surface.
+	‘Be careful with that now, Lorna,’ said Declan as he replaced the frame onto the mantelpiece. ‘There we go now,’ patting Lorna on the head before continuing, ‘she’s living in grace without end, and in our hearts, so she is.’
+	‘Beautiful Declan,’ said Father McClatchey, placing a kiss onto Una’s cheek, ‘dry your tears now, Aileen.’
+	Lorna felt a warmth rise into her chest and noticed her rapid breathing. Her hands had a fine tremble and she braced herself against the kitchen table and took a sip of tea.
+	’D’ya see Aileen?’ said the Father, biting into a slice of malted toast almost simultaneously as he slurped his tea, ‘Una will be grand on the day so she will.’ 
+	Aileen topped up Father McClatchey’s mug. 
+	‘She has some trouble with the Glory be Father,’ said Aileen, dropping more bacon onto his plate, ‘the order of the words like.’
+	Father McClatchey tried to pick out some bacon fat caught between his top teeth, creating in the process a snarling appearance.
+	’Tis easy enough with some practice now, Aileen, and I’ll take her into the Transept after her reading on Sunday and we’ll get it right so we will.’
+	Lorna dropped her mug of tea, which broke into fragments on the cold stone floor. 
+	‘Well there’s no putting that together when its that broke,’ said Declan.
+	Una jumped down from the Father’s lap and moved over to Lorna to see the damage.
+	Father McClatchey left the kitchen and returned with his coat, whilst Aileen helped Lorna clean up. 
+	‘I’ll see you for a private lesson on Sunday, Una, and just remember the order of the words is very logical now so it is,’ said the Father as he doffed his cap to Aileen and Declan , ‘beginning… now… and ever shall be.’ 
+	Lorna thought about the Glory Be as she returned to her bedroom. Una took off the heavy dressing gown and Lorna looked at her naked sister reciting the Glory be into the mirror.  ‘Glory be to the Father, and to the Son, and to the Holy Spirit, as it was in the beginning, is now, and ever shall be, world without end. Amen.’
+	Lorna smiled at Una.
+	‘I did it Lorna,’ said Una, as she spun round and jumped into Lorna’s lap.
+	Lorna hugged her innocence and stroked her unsullied flesh. World without end thought Lorna, as she pulled the soft duvet around Una’s shoulders. She knew she had to stop Una having the lesson. She knew this had to end on Sunday. Pressing herself closer to Una she placed her lips softly onto Una’s ear and whispered, ‘Can you keep a secret?’
+
+Lorna stood and released her mother’s clammy hand. Gentle applause and soft murmurs of support from the congregation stirred the air as she took her first tentative steps towards the pulpit. The clapping grew and echoed around the vaults of the 12th century church of Ballytabrae, County Cork. Una could never keep secrets, and Lorna wondered how quiet it would be after she had finished, how shocked and disgusted the smiling faces might be then. Perhaps. Lorna passed an old man sitting on the edge of the last pew who reached out and stroked her arm. She stopped and looked down at him and flinched her arm away, regretting it immediately. She let a small smile develop in compensation.
+	‘You are a beautiful girl, Lorna Sullivan, like your mother so you are, and don’t you forget it now. God bless you me darling,’ said the old man.
+	An occasional baby’s cry added to the tension, and frosty stares from the childless beamed to guilty looking parents as they tried to keep order over their broods. Lorna’s parents sat in the back row and tightened their grip of each other’s hands, as they peered through a sea of heads in front of them to watch their daughter ascend to the pulpit. They hadn’t believed Una, but Lorna had heard them praying every night before bed for it to be true.
+	Lorna reached the pulpit and stumbled on its first stone step, dropping her notes over the cold granite floor. Silence. Her trembling hands scooped the scrawled notes into an uneven bundle. She rearranged them at the lectern in full view of the congregation. Lorna’s reddened face attempted a smile as she glanced around. She pushed her tongue over her top teeth and around her dry mouth searching for moisture. Lorna thought the bulges in her cheeks, as her tongue continued its exploration, must have looked comical to the giggling front row children.
+	‘Be quiet now,’ said Father McClatchey, glaring at them.
+	‘Father McClatchey, suffer unto me the little children?’ said Lorna.
+‘Jaysus, Mary mother of god,’ said the Priest, who dropped to his knees in front of the stone altar, raising his arms towards the effigy of Christ hanging above Lorna's head. 
+	The arched black door to the East transept blew open sending in a cold blast of winter air. The door led into the priest's changing area and Lorna could see directly into the room. There were cassocks hanging from dark oak beams and chains draped like a hangman's noose, ready for the censer, cooking its sweet smoking incense. A storm brewing outside sounded a distant thunder crack.  The children stopped their laughter. One small girl started crying and snuggled close to her mother. Aileen collapsed across Declan’s lap.
+	‘Jaysus, Jaysus, she’s speaking, Christ she’s speaking,’ said Declan.
+	Lorna looked at her father across the sea of faces mouthing Hail Marys, and wished she could wipe his tears away. She longed to hold and kiss her mother. Too late. She wasn't a child anymore. She knew her first words would hurt. She knew there were more tears to come.
+	Father McClatchey rose and turned to the congregation.
+	‘Praise the lord, our prayers have been answered,’ he said. Ashen faced, bowed head,  he moved over to Lorna. Behind her, close in tight behind her. He placed his arm on her right shoulder and slipped his other hand down her low back, unseen, and caressed her left buttock. He leaned in closer and whispered, ‘God be with you child. Be a good girl now, and think of your Mammy and Pappy.’
+	Unseen by the crowd, Lorna reached behind and dug her nails into the back of his hand.
+	Father McClatchey cradled his hand one in the other and in feigned prayer stepped back. He looked at the congregation and then to the notes Lorna had placed onto the lectern. There were pictures of crosses, faces, unhappy looking faces, drawn all over the front page of her diary. The diary she started the night her sister had died. The night she had been cared for, by Father McClatchey, as her parents grieved at the hospital.
+	Someone fastened the East door, but new air had cooled the room and the atmosphere changed. Lorna clutched her notes and raised them high above her head.
+	‘I am Lorna Sullivan, I am seventeen, and I have something important to tell yous all.’
+	‘Lord, we thank you for bringing our daughter back to us. Let us rise and sing hymn 346  - Into the hands of our redeemer,’ said Father McClatchey.
+	Lorna saw her Daddy’s hand in the air, as if trying to signal Father McClatchey. She turned to the organist and wagged her finger. ‘Father McClatchey, are you ashamed to look my daddy in the eyes now?’ she said, keeping her voice low.
+	‘Yes Declan, what is it?’ said Father McClatchey.
+	‘Please, Father, she hasn't spoken for ten years, it's a miracle, let her speak, it must be god's will.’
+	‘To be sure Declan, but it’s an awful ordeal for her I'll wager. I’ll take her for a private talk and prayer - it'll be for the best now.’ Father McClatchey beckoned Lorna into the East transept.
+	Lorna noticed dark blue veins bulge in his neck. She smelt the sweat dripping from his brow.
+	He moved close to her once more. He could taste the red communion Cabernet on his breath as it wafted across her face. She knew these sensations well. She remembered. The hand that slipped between her legs, and stole her voice.
+	‘Let her speak now Father, please,’ said Declan who had joined Lorna at the pulpit.
+	Aileen sat slumped in the pew, her shoulders rocking with the quiet effort of crying.
+	Father McClatchey walked away towards the East door and sat on the edge of the altar steps. 
+	'Father McClatchey… over there … he …’ Lorna’s lips stuck together. She gripped the lectern to maintain her balance.
+	Father McClatchey stood, and Lorna saw him tremble at the sound of his name on her lips. 
+	‘Lorna please be careful with your words now, please,’ said Father McClatchey.
+	‘I’m sorry Father, they have a right to know.’
+	‘Jaysus, Holy Mary Mother of God, pray for me a sinner now and at the hour of my death.' Father McClatchey continued to mutter the incantation under his breath repeatedly and withdrew through the East transept door.
+	‘What's going on here Lorna,’ said Declan, joining Lorna at the lectern, ‘what is it you have to tell us?’
+	‘Sorry, Daddy.’ Lorna gripped the sides of the lectern and her knuckles whitened as she summoned up the courage for the final hurdle. ‘I can't live this lie. Daddy, I'm sorry.’
+	Lorna looked over to the East door. The latch, loosened by a gust from the storm outside caused the door to swing a little. Lorna heard a creaking noise from within and from her position at the lectern snatched a glimpse within as the door drifted open further. Father McClatchey standing on a bench appeared to Lorna to be removing his cassock over his head. She imagined the thick censer’s smoke billowing around him rising from Hell itself. The door swung shut but Lorna felt sure that he would hear her final words. A thunder crack broke over the steeple. 
+	‘I , I …’ Lorna stuttered and her tears fell onto her notes, onto a felt tip scrawl of a childlike cross. She looked up at the effigy above her and rubbed the tears into an inky smudge. She screwed up the page and threw it at the Christ. ‘I don't believe in him, any of it, any of it.’ She slumped into Declan's chest and gulped the air to feed her sobbing. ‘I can’t, I just can’t.’
+	'Jaysus, Lorna, you don't believe in God? Is that what’s got your tongue? Do ya think me and your mammy care? Come here ya daft ha'porth.’
+	The old man at the end of the last pew approached and Lorna remembered how she had flinched at his touch earlier.
+	‘Welcome back, God bless you,’ he said, placing a kiss onto her arm. Unflinching, Lorna wrapped herself around her daddy’s chest and decided she would stay there forever.
+	Lorna, Una, and her parents waited on the altar to receive many more well wishes from the congregation as folk filed out into the crisp morning air. The storm had long blown over.
+	‘I’ve ruined the Mass,’ said Lorna looking up at Declan.
+	Declan cradled Lorna’s head and landed dozens of kisses on it.
+	’Not at all poppet, Father will forgive you for sure.’ Declan guided all his girls towards the North door, ‘Jaysus, I’m looking forward to a good old chat now so I am.’
+	Forgive me? thought Lorna. She looked across to the East transept door, now fully open, to reveal Father McClatchey, swinging, at peace, the censer’s smoke billowing beneath his dangling feet. Lorna looked up at her Daddy. She would say nothing. She was good at that.
+</pre>
+<p>```</p>
+
+<pre><code>&lt;head&gt;
+  &lt;style&gt;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&amp;display=swap');
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div class=&quot;hero&quot;&gt;
+    &lt;div class=&quot;hero-title&quot;&gt;Responsive layouts don't have to be a struggle  &lt;div class=&quot;button-round-red&quot;&gt;1&lt;/div&gt;&lt;/div&gt;
+   
+    &lt;div class=&quot;hero-content&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.&lt;div class=&quot;button-round-red&quot;&gt;2&lt;/div&gt;&lt;/div&gt;
+    
+    &lt;div class=&quot;button-lozenge&quot;&gt;I WANT TO LEARN&lt;/div&gt;&lt;div class=&quot;button-round-red&quot;&gt;3&lt;/div&gt;
+     
+      
+  &lt;/div&gt;
+  
+&lt;/body&gt;
+</code></pre>
+
+<p>```</p>
+
+<p>```</p>
+
+<pre><code>*{
+  box-sizing:border-box;
+}
+
+.hero{
+  background-color:#23424A;
+    color:white;
+ 
+   padding:100px;
+}
+.hero-title{
+  font-size:48px;
+  font-family: 'Roboto', sans-serif;
+  width:72%;
+    font-weight:bold;
+}
+.hero-content{
+  width:72%;
+  padding:1rem 0;
+  color:lightgrey;
+  font-family: 'Roboto', sans-serif;
+  font-size:21px;
+}
+.button-lozenge{
+  background-color:#38CFD9;
+    text-align:center;
+  padding:1rem;
+  width:30%;
+  margin:2rem 1rem;
+  color:black;
+  font-weight:bold;
+  font-family: 'Roboto', sans-serif;
+  border-radius:25px;
+  display:inline-block;
+  
+  
+}
+.button-round-red{
+  font-weight:bold;
+  font-size:35px;
+  background-color:red;
+  display:inline-block;
+  width:1.5em;
+  height:1.5em;
+  border-radius:50%;
+  text-align:center;
+  margin: 0 0 0 1rem
+  
+}
+</code></pre>
+
+<p>```</p>
+
+<h3>
+  This is useful code for making the first letter in the first word of a
+  paragraph massive
+</h3>
+
+<p>```</p>
+
+<pre><code>span {
+  float: left;
+  width: 0.7em;
+  font-size: 400%;
+  font-family: algerian, courier;
+  line-height: 80%;
+}
+</code></pre>
+
+<h3>highlighting</h3>
+
+<ul>
+  <li>Use &lt;mark&gt; to highlight <mark>a piece of text</mark></li>
+</ul>
+
+<h3>escaping specual characters</h3>
+
+<p>Use a backslash (\) before tags to render them literally;</p>
+
+<ul>
+  <li>&lt;b&gt;bold&lt;/b&gt;</li>
+  <li>instead of just <b>bold</b></li>
+</ul>
+
+<h3>strikethrough</h3>
+
+<p>strikethrough is accomplished with &lt;strike&gt; tag, e.g;</p>
+
+<ul>
+  <li>&lt;strike&gt;This is full strike&lt;/strike&gt;</li>
+  <li><strike>This is full strike</strike></li>
+</ul>
+
+                </div>
+            </section>
+
+            <!-- Email subscribe form at the bottom of the page -->
+            
+                <section class="subscribe-form">
+                    <h3 class="subscribe-form-title">Subscribe to old rectory writers</h3>
+                    <p>Get the latest posts delivered right to your inbox</p>
+                    <form method="post" action="/subscribe/" class="">
+    <input class="confirm" type="hidden" name="confirm"  /><input class="location" type="hidden" name="location"  /><input class="referrer" type="hidden" name="referrer"  />
+
+    <div class="form-group">
+        <input class="subscribe-email" type="email" name="email"  placeholder="youremail@example.com" />
+    </div>
+    <button class="" type="submit" disabled><span>Subscribe</span></button>
+    <script type="text/javascript">(function(g,h,o,s,t){h[o]('.location')[s]=h[o]('.location')[s] || g.location.href;h[o]('.referrer')[s]=h[o]('.referrer')[s] || h.referrer;})(window,document,'querySelector','value');</script>
+</form>
+
+                </section>
+            
+
+            <footer class="post-full-footer">
+                <!-- Everything inside the #author tags pulls data from the author -->
+                <!-- #author-->
+                
+                    
+                        <section class="author-card">
+                            
+                                <img class="author-profile-image" src="/recwriter/assets/images/moc.jpg" alt="mark" />
+                            
+                            <section class="author-card-content">
+                                <h4 class="author-card-name"><a href="/recwriter/author/mark">Dr Mark O'Connor</a></h4>
+                                
+                                    <p>doctor, writer, teacher and creative director at the old rectory arts center</p>
+                                
+                            </section>
+                        </section>
+                        <div class="post-full-footer-right">
+                            <a class="author-card-button" href="/recwriter/author/mark">Read More</a>
+                        </div>
+                    
+                
+                <!-- /author  -->
+            </footer>
+
+            <!-- If you use Disqus comments, just uncomment this block.
+            The only thing you need to change is "test-apkdzgmqhj" - which
+            should be replaced with your own Disqus site-id. -->
+            
+                <section class="post-full-comments">
+                    <div id="disqus_thread"></div>
+                    <script>
+                        var disqus_config = function () {
+                            this.page.url = 'https://drmarkoconnor.github.io/tags';
+                            this.page.identifier = '/Christmas';
+                            this.page.title = 'Responsive layout tips';
+                        };
+                        (function() {
+                            var d = document, s = d.createElement('script');
+                            s.src = 'https://https-drmarkoconnor-github-io.disqus.com/embed.js';
+                            s.setAttribute('data-timestamp', +new Date());
+                            (d.head || d.body).appendChild(s);
+                        })();
+                    </script>
+                </section>
+            
+
+        </article>
+
+    </div>
+</main>
+
+<!-- Links to Previous/Next posts -->
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+            
+                
+                
+                
+                
+                    <article class="read-next-card"
+                        
+                            style="background-image: url(/recwriter/assets/images/us-23.jpg)"
+                        
+                    >
+                        <header class="read-next-card-header">
+                            <small class="read-next-card-header-sitetitle">&mdash; old rectory writers &mdash;</small>
+                            
+                                <h3 class="read-next-card-header-title"><a href="/recwriter/tag/git/">Git</a></h3>
+                            
+                        </header>
+                        <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/></svg>
+</div>
+                        <div class="read-next-card-content">
+                            <ul>
+                                
+                                
+                                  
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                            <li><a href="/recwriter/more-git">More Git</a></li>
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                            <li><a href="/recwriter/git-basics">Markup is converted to html by tiinderbox</a></li>
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                            <li><a href="/recwriter/network-command">Set on 3/1/2020 to post on 4th January git Netowrk commands</a></li>
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                            </ul>
+                        </div>
+                        <footer class="read-next-card-footer">
+                            <a href="/recwriter/tag/git/">
+                                
+                                    See all 3 posts  →
+                                
+                            </a>
+                        </footer>
+                    </article>
+                
+            
+
+            <!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs -->
+            
+
+            <!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs -->
+            
+                
+
+    <article class="post-card post-template">
+        
+            <a class="post-card-image-link" href="/recwriter/more-git">
+                <div class="post-card-image" style="background-image: url(/recwriter/assets/images/us-35.jpg)"></div>
+            </a>
+        
+        <div class="post-card-content">
+            <a class="post-card-content-link" href="/recwriter/more-git">
+                <header class="post-card-header">
+                    
+                        
+                            
+                                <span class="post-card-tags">Git</span>
+                            
+                        
+                    
+
+                    <h2 class="post-card-title">More Git</h2>
+                </header>
+                <section class="post-card-excerpt">
+                    
+                        <p></p>
+                    
+                </section>
+            </a>
+            <footer class="post-card-meta">
+                
+                    
+                        
+                        <img class="author-profile-image" src="/recwriter/assets/images/moc.jpg" alt="Dr Mark O'Connor" />
+                        
+                        <span class="post-card-author">
+                            <a href="/recwriter/author/mark/">Dr Mark O'Connor</a>
+                        </span>
+                    
+                
+                <span class="reading-time">
+                    
+                    
+                      1 min read
+                    
+                </span>
+            </footer>
+        </div>
+    </article>
+
+            
+
+        </div>
+    </div>
+</aside>
+
+<!-- Floating header which appears on-scroll, included from includes/floating-header.hbs -->
+<div class="floating-header">
+    <div class="floating-header-logo">
+        <a href="https://drmarkoconnor.github.io/recwriter/">
+            
+            <span>old rectory writers</span>
+        </a>
+    </div>
+    <span class="floating-header-divider">&mdash;</span>
+    <div class="floating-header-title">Responsive layout tips</div>
+    <div class="floating-header-share">
+        <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/>
+</svg>
+</div>
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=Responsive+layout+tips&amp;url=tags"
+            onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
+
+        </a>
+        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=tags"
+            onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
+
+        </a>
+    </div>
+    <progress class="progress" value="0">
+        <div class="progress-container">
+            <span class="progress-bar"></span>
+        </div>
+    </progress>
+</div>
+
+
+<!-- /post -->
+
+<!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs -->
+
+
+        <!-- Previous/next page links - displayed on every page -->
+        
+
+        <!-- The footer at the very bottom of the screen -->
+        <footer class="site-footer outer">
+            <div class="site-footer-content inner">
+                <section class="copyright"><a href="https://drmarkoconnor.github.io/recwriter/">old rectory writers</a> &copy; 2021</section>
+                <section class="poweredby">Proudly published with <a href="https://jekyllrb.com/">Jekyll</a> &
+                    <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a> using
+                    <a href="https://github.com/jekyller/jasper2" target="_blank" rel="noopener">Jasper2</a></section>
+                <nav class="site-footer-nav">
+                    <a href="/recwriter/">Latest Posts</a>
+                    
+                    <a href="https://twitter.com/mdoc007" target="_blank" rel="noopener">Twitter</a>
+                    <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>
+                </nav>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- The big email subscribe modal content -->
+    
+        <div id="subscribe" class="subscribe-overlay">
+            <a class="subscribe-overlay-close" href="#"></a>
+            <div class="subscribe-overlay-content">
+                
+                <h1 class="subscribe-overlay-title">Subscribe to old rectory writers</h1>
+                <p class="subscribe-overlay-description">Stay up to date! Get all the latest &amp; greatest posts delivered straight to your inbox</p>
+                <form method="post" action="/subscribe/" class="">
+    <input class="confirm" type="hidden" name="confirm"  /><input class="location" type="hidden" name="location"  /><input class="referrer" type="hidden" name="referrer"  />
+
+    <div class="form-group">
+        <input class="subscribe-email" type="email" name="email"  placeholder="youremail@example.com" />
+    </div>
+    <button class="" type="submit" disabled><span>Subscribe</span></button>
+    <script type="text/javascript">(function(g,h,o,s,t){h[o]('.location')[s]=h[o]('.location')[s] || g.location.href;h[o]('.referrer')[s]=h[o]('.referrer')[s] || h.referrer;})(window,document,'querySelector','value');</script>
+</form>
+
+            </div>
+        </div>
+    
+
+    <!-- highlight.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.10.0/components/prism-abap.min.js"></script>
+    <script>$(document).ready(function() {
+      $('pre code').each(function(i, block) {
+        hljs.highlightBlock(block);
+      });
+    });</script>
+
+    <!-- jQuery + Fitvids, which makes all video embeds responsive -->
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="/recwriter/assets/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="https://demo.ghost.io/assets/js/jquery.fitvids.js?v=724281a32e"></script>
+
+
+    <!-- Paginator increased to "infinit" in _config.yml -->
+    <!-- if paginator.posts  -->
+    <!-- <script>
+        var maxPages = parseInt('');
+    </script>
+    <script src="/recwriter/assets/js/infinitescroll.js"></script> -->
+    <!-- /endif -->
+
+    
+
+
+    <!-- Add Google Analytics  -->
+    <!-- Google Analytics Tracking code -->
+ <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-69281367-1', 'auto');
+  ga('send', 'pageview');
+
+ </script>
+
+
+    <!-- The #block helper will pull in data from the #contentFor other template files. In this case, there's some JavaScript which we only want to use in post.hbs, but it needs to be included down here, after jQuery has already loaded. -->
+    
+        <script>
+
+// NOTE: Scroll performance is poor in Safari
+// - this appears to be due to the events firing much more slowly in Safari.
+//   Dropping the scroll event and using only a raf loop results in smoother
+//   scrolling but continuous processing even when not scrolling
+$(document).ready(function () {
+    // Start fitVids
+    var $postContent = $(".post-full-content");
+    $postContent.fitVids();
+    // End fitVids
+
+    var progressBar = document.querySelector('progress');
+    var header = document.querySelector('.floating-header');
+    var title = document.querySelector('.post-full-title');
+
+    var lastScrollY = window.scrollY;
+    var lastWindowHeight = window.innerHeight;
+    var lastDocumentHeight = $(document).height();
+    var ticking = false;
+
+    function onScroll() {
+        lastScrollY = window.scrollY;
+        requestTick();
+    }
+
+    function onResize() {
+        lastWindowHeight = window.innerHeight;
+        lastDocumentHeight = $(document).height();
+        requestTick();
+    }
+
+    function requestTick() {
+        if (!ticking) {
+            requestAnimationFrame(update);
+        }
+        ticking = true;
+    }
+
+    function update() {
+        var trigger = title.getBoundingClientRect().top + window.scrollY;
+        var triggerOffset = title.offsetHeight + 35;
+        var progressMax = lastDocumentHeight - lastWindowHeight;
+
+        // show/hide floating header
+        if (lastScrollY >= trigger + triggerOffset) {
+            header.classList.add('floating-active');
+        } else {
+            header.classList.remove('floating-active');
+        }
+
+        progressBar.setAttribute('max', progressMax);
+        progressBar.setAttribute('value', lastScrollY);
+
+        ticking = false;
+    }
+
+    window.addEventListener('scroll', onScroll, {passive: true});
+    window.addEventListener('resize', onResize, false);
+
+    update();
+});
+</script>
+
+    
+
+    <!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag -->
+    <!-- ghost_foot -->
+
+</body>
+</html>

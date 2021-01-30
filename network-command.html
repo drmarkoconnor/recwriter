@@ -102,7 +102,7 @@
 
 
 </head>
-<body class="post=template">
+<body class="post-template">
 
     <div class="site-wrapper">
         <!-- All the main content gets inserted here, index.hbs, post.hbs, etc -->
@@ -271,7 +271,7 @@ into the {body} of the default.hbs template -->
                         };
                         (function() {
                             var d = document, s = d.createElement('script');
-                            s.src = 'https://drmarkoconnor.disqus.com/embed.js';
+                            s.src = 'https://https-drmarkoconnor-github-io.disqus.com/embed.js';
                             s.setAttribute('data-timestamp', +new Date());
                             (d.head || d.body).appendChild(s);
                         })();
@@ -314,7 +314,7 @@ into the {body} of the default.hbs template -->
                                     
                                         
                                         
-                                            <li><a href="/recwriter/Christmas">There can be a much longer title set in the MyTitle KA</a></li>
+                                            <li><a href="/recwriter/tags">Responsive layout tips</a></li>
                                         
                                     
                                   
@@ -343,8 +343,6 @@ into the {body} of the default.hbs template -->
                                 
                                   
                                     
-                                  
-                                
                                   
                                 
                                   
@@ -410,11 +408,7 @@ into the {body} of the default.hbs template -->
                     
                         
                             
-                               <span class="post-card-tags">Git</span>
-                            
-                        
-                            
-                                <span class="post-card-tags">Tech</span>
+                                <span class="post-card-tags">Git</span>
                             
                         
                     
@@ -456,22 +450,22 @@ into the {body} of the default.hbs template -->
 
     <article class="post-card post-template">
         
-            <a class="post-card-image-link" href="/recwriter/building-this-website">
-                <div class="post-card-image" style="background-image: url(/recwriter/assets/images/logo_or.jpg)"></div>
+            <a class="post-card-image-link" href="/recwriter/welcome">
+                <div class="post-card-image" style="background-image: url(/recwriter/assets/images/welcome.jpg)"></div>
             </a>
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="/recwriter/building-this-website">
+            <a class="post-card-content-link" href="/recwriter/welcome">
                 <header class="post-card-header">
                     
                         
                             
-                                <span class="post-card-tags">Tech</span>
+                                <span class="post-card-tags">Getting started</span>
                             
                         
                     
 
-                    <h2 class="post-card-title">How this website is built - for free!</h2>
+                    <h2 class="post-card-title">Welcome to Ghost</h2>
                 </header>
                 <section class="post-card-excerpt">
                     
@@ -481,13 +475,6 @@ into the {body} of the default.hbs template -->
             </a>
             <footer class="post-card-meta">
                 
-                    
-                        
-                        <img class="author-profile-image" src="/recwriter/assets/images/moc.jpg" alt="Dr Mark O'Connor" />
-                        
-                        <span class="post-card-author">
-                            <a href="/recwriter/author/mark/">Dr Mark O'Connor</a>
-                        </span>
                     
                 
                 <span class="reading-time">
@@ -632,6 +619,71 @@ into the {body} of the default.hbs template -->
 
 
     <!-- The #block helper will pull in data from the #contentFor other template files. In this case, there's some JavaScript which we only want to use in post.hbs, but it needs to be included down here, after jQuery has already loaded. -->
+    
+        <script>
+
+// NOTE: Scroll performance is poor in Safari
+// - this appears to be due to the events firing much more slowly in Safari.
+//   Dropping the scroll event and using only a raf loop results in smoother
+//   scrolling but continuous processing even when not scrolling
+$(document).ready(function () {
+    // Start fitVids
+    var $postContent = $(".post-full-content");
+    $postContent.fitVids();
+    // End fitVids
+
+    var progressBar = document.querySelector('progress');
+    var header = document.querySelector('.floating-header');
+    var title = document.querySelector('.post-full-title');
+
+    var lastScrollY = window.scrollY;
+    var lastWindowHeight = window.innerHeight;
+    var lastDocumentHeight = $(document).height();
+    var ticking = false;
+
+    function onScroll() {
+        lastScrollY = window.scrollY;
+        requestTick();
+    }
+
+    function onResize() {
+        lastWindowHeight = window.innerHeight;
+        lastDocumentHeight = $(document).height();
+        requestTick();
+    }
+
+    function requestTick() {
+        if (!ticking) {
+            requestAnimationFrame(update);
+        }
+        ticking = true;
+    }
+
+    function update() {
+        var trigger = title.getBoundingClientRect().top + window.scrollY;
+        var triggerOffset = title.offsetHeight + 35;
+        var progressMax = lastDocumentHeight - lastWindowHeight;
+
+        // show/hide floating header
+        if (lastScrollY >= trigger + triggerOffset) {
+            header.classList.add('floating-active');
+        } else {
+            header.classList.remove('floating-active');
+        }
+
+        progressBar.setAttribute('max', progressMax);
+        progressBar.setAttribute('value', lastScrollY);
+
+        ticking = false;
+    }
+
+    window.addEventListener('scroll', onScroll, {passive: true});
+    window.addEventListener('resize', onResize, false);
+
+    update();
+});
+</script>
+
     
 
     <!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag -->
